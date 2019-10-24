@@ -18,6 +18,10 @@
 		A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */; };
 		A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */; };
 		A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */; };
+		A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */; };
+		A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */; };
+		A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6022361DE4C000DAD2B /* MCTextView.h */; };
+		A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E6032361DE4C000DAD2B /* MCTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MSTouch.m"; sourceTree = "<group>"; };
 		A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MSHex.h"; sourceTree = "<group>"; };
 		A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MSHex.m"; sourceTree = "<group>"; };
+		A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MSTransform.h"; sourceTree = "<group>"; };
+		A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MSTransform.m"; sourceTree = "<group>"; };
+		A6F1E6022361DE4C000DAD2B /* MCTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTextView.h; sourceTree = "<group>"; };
+		A6F1E6032361DE4C000DAD2B /* MCTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		A6F1E5E6236196C6000DAD2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A6F1E6012361DDE0000DAD2B /* TextView */,
 				A6F1E5E7236196CD000DAD2B /* MSCategories */,
 			);
 			path = Core;
@@ -114,16 +123,43 @@
 		A6F1E5E7236196CD000DAD2B /* MSCategories */ = {
 			isa = PBXGroup;
 			children = (
-				A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */,
-				A6F1E5E9236196FE000DAD2B /* NSString+MSSize.m */,
-				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
-				A6F1E5ED2361990B000DAD2B /* UIView+MSSize.m */,
+				A6F1E6072361DEB6000DAD2B /* Foundation */,
+				A6F1E6062361DE96000DAD2B /* UIKit */,
 				A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */,
-				A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */,
-				A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */,
 				A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */,
 			);
 			path = MSCategories;
+			sourceTree = "<group>";
+		};
+		A6F1E6012361DDE0000DAD2B /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				A6F1E6022361DE4C000DAD2B /* MCTextView.h */,
+				A6F1E6032361DE4C000DAD2B /* MCTextView.m */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		A6F1E6062361DE96000DAD2B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
+				A6F1E5ED2361990B000DAD2B /* UIView+MSSize.m */,
+				A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */,
+				A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A6F1E6072361DEB6000DAD2B /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */,
+				A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */,
+				A6F1E5E9236196FE000DAD2B /* NSString+MSSize.m */,
+				A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,7 +169,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
+				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
 				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 				A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */,
@@ -240,6 +278,8 @@
 			files = (
 				A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */,
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
+				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
+				A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
 			);
