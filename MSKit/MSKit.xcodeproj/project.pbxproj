@@ -22,6 +22,8 @@
 		A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */; };
 		A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6022361DE4C000DAD2B /* MCTextView.h */; };
 		A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E6032361DE4C000DAD2B /* MCTextView.m */; };
+		A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */; };
+		A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E6092361E22E000DAD2B /* UITextField+MSLimits.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MSTransform.m"; sourceTree = "<group>"; };
 		A6F1E6022361DE4C000DAD2B /* MCTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCTextView.h; sourceTree = "<group>"; };
 		A6F1E6032361DE4C000DAD2B /* MCTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCTextView.m; sourceTree = "<group>"; };
+		A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+MSLimits.h"; sourceTree = "<group>"; };
+		A6F1E6092361E22E000DAD2B /* UITextField+MSLimits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MSLimits.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
+				A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */,
+				A6F1E6092361E22E000DAD2B /* UITextField+MSLimits.m */,
 				A6F1E5ED2361990B000DAD2B /* UIView+MSSize.m */,
 				A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */,
 				A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */,
@@ -169,6 +175,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */,
 				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
@@ -281,6 +288,7 @@
 				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
 				A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
+				A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
