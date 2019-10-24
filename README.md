@@ -1,2 +1,2 @@
-# MCKit
+# MSKit
 
