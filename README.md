@@ -1,2 +1,2 @@
-# MCLoginKit
-Just for login 
+# MCKit
+
