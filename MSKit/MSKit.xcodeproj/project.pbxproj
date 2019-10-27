@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; };
+		A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92A7236557870014785A /* NSString+MSEmoji.m */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A6AB92A6236557870014785A /* NSString+MSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSEmoji.h"; sourceTree = "<group>"; };
+		A6AB92A7236557870014785A /* NSString+MSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MSEmoji.m"; sourceTree = "<group>"; };
 		A6F1E5CC236196B0000DAD2B /* MSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1E5CF236196B0000DAD2B /* MSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKit.h; sourceTree = "<group>"; };
 		A6F1E5D0236196B0000DAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */,
 				A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */,
 				A6F1E5E9236196FE000DAD2B /* NSString+MSSize.m */,
+				A6AB92A6236557870014785A /* NSString+MSEmoji.h */,
+				A6AB92A7236557870014785A /* NSString+MSEmoji.m */,
 				A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */,
 			);
 			path = Foundation;
@@ -180,6 +186,7 @@
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
+				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
 				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 				A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */,
 				A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */,
@@ -287,6 +294,7 @@
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
 				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
 				A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */,
+				A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
 				A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
