@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (MSEmoji)
 - (BOOL)isEmoji;
+- (BOOL)containsEmoji:(NSString *)string;
 @end
 
 NS_ASSUME_NONNULL_END

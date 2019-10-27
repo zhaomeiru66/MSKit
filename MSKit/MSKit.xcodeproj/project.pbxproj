@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; };
 		A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92A7236557870014785A /* NSString+MSEmoji.m */; };
+		A6AB92AC2365C32C0014785A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AB2365C32C0014785A /* Json.swift */; };
+		A6AB92AE2365C34C0014785A /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AD2365C34C0014785A /* Element.swift */; };
+		A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AF2365C3960014785A /* ElementReferenceType.swift */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +44,9 @@
 /* Begin PBXFileReference section */
 		A6AB92A6236557870014785A /* NSString+MSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSEmoji.h"; sourceTree = "<group>"; };
 		A6AB92A7236557870014785A /* NSString+MSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MSEmoji.m"; sourceTree = "<group>"; };
+		A6AB92AB2365C32C0014785A /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		A6AB92AD2365C34C0014785A /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		A6AB92AF2365C3960014785A /* ElementReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementReferenceType.swift; sourceTree = "<group>"; };
 		A6F1E5CC236196B0000DAD2B /* MSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1E5CF236196B0000DAD2B /* MSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKit.h; sourceTree = "<group>"; };
 		A6F1E5D0236196B0000DAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6AB92AA2365C3000014785A /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A6AB92AB2365C32C0014785A /* Json.swift */,
+				A6AB92AD2365C34C0014785A /* Element.swift */,
+				A6AB92AF2365C3960014785A /* ElementReferenceType.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		A6F1E5C2236196B0000DAD2B = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +138,7 @@
 		A6F1E5E6236196C6000DAD2B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A6AB92AA2365C3000014785A /* JSON */,
 				A6F1E6012361DDE0000DAD2B /* TextView */,
 				A6F1E5E7236196CD000DAD2B /* MSCategories */,
 			);
@@ -243,6 +260,7 @@
 				TargetAttributes = {
 					A6F1E5CB236196B0000DAD2B = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					A6F1E5D4236196B0000DAD2B = {
 						CreatedOnToolsVersion = 11.1;
@@ -290,9 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AB92AC2365C32C0014785A /* Json.swift in Sources */,
 				A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */,
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
+				A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */,
 				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
+				A6AB92AE2365C34C0014785A /* Element.swift in Sources */,
 				A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */,
 				A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
@@ -439,6 +460,7 @@
 		A6F1E5E1236196B0000DAD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NGJVXQWTLX;
@@ -455,6 +477,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.memoriesus.MSKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -462,6 +486,7 @@
 		A6F1E5E2236196B0000DAD2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NGJVXQWTLX;
@@ -478,6 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.memoriesus.MSKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -485,6 +511,7 @@
 		A6F1E5E4236196B0000DAD2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NGJVXQWTLX;
 				INFOPLIST_FILE = MSKitTests/Info.plist;
@@ -502,6 +529,7 @@
 		A6F1E5E5236196B0000DAD2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NGJVXQWTLX;
 				INFOPLIST_FILE = MSKitTests/Info.plist;
