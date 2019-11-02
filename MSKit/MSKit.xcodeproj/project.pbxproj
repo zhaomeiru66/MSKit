@@ -12,6 +12,8 @@
 		A6AB92AC2365C32C0014785A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AB2365C32C0014785A /* Json.swift */; };
 		A6AB92AE2365C34C0014785A /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AD2365C34C0014785A /* Element.swift */; };
 		A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AF2365C3960014785A /* ElementReferenceType.swift */; };
+		A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */; };
+		A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +49,8 @@
 		A6AB92AB2365C32C0014785A /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		A6AB92AD2365C34C0014785A /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		A6AB92AF2365C3960014785A /* ElementReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementReferenceType.swift; sourceTree = "<group>"; };
+		A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
+		A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 		A6F1E5CC236196B0000DAD2B /* MSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1E5CF236196B0000DAD2B /* MSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKit.h; sourceTree = "<group>"; };
 		A6F1E5D0236196B0000DAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */,
 				A6F1E5E9236196FE000DAD2B /* NSString+MSSize.m */,
 				A6AB92A6236557870014785A /* NSString+MSEmoji.h */,
+				A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */,
+				A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */,
 				A6AB92A7236557870014785A /* NSString+MSEmoji.m */,
 				A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */,
 			);
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */,
+				A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */,
 				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
@@ -310,6 +317,7 @@
 			files = (
 				A6AB92AC2365C32C0014785A /* Json.swift in Sources */,
 				A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */,
+				A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */,
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
 				A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */,
 				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
