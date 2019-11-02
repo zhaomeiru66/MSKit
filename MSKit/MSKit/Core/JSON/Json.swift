@@ -28,7 +28,7 @@ public class ElementArrayReferenceReferenceClass{
     public var ref : ElementArrayReference!
 }
 func ElementArrayReferenceCreateFunction() -> ElementArrayReferenceReferenceClass{
-    var returnReference = ElementArrayReferenceReferenceClass()
+    let returnReference = ElementArrayReferenceReferenceClass()
     returnReference.ref = ElementArrayReference()
     return returnReference
 }
@@ -36,7 +36,7 @@ public class ElementReferenceClass{
     public var ref : Element!
 }
 func ElementCreateFunction() -> ElementReferenceClass{
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = Element()
     return returnReference
 }
@@ -47,7 +47,7 @@ public class ElementReferenceReferenceClass{
     public var ref : ElementReference!
 }
 func ElementReferenceCreateFunction() -> ElementReferenceReferenceClass{
-    var returnReference = ElementReferenceReferenceClass()
+    let returnReference = ElementReferenceReferenceClass()
     returnReference.ref = ElementReference()
     return returnReference
 }
@@ -58,7 +58,7 @@ public class ElementTypeReferenceClass{
     public var ref : ElementType!
 }
 func ElementTypeCreateFunction() -> ElementTypeReferenceClass{
-    var returnReference = ElementTypeReferenceClass()
+    let returnReference = ElementTypeReferenceClass()
     returnReference.ref = ElementType()
     return returnReference
 }
@@ -70,7 +70,7 @@ public class TokenReferenceClass{
     public var ref : Token!
 }
 func TokenCreateFunction() -> TokenReferenceClass{
-    var returnReference = TokenReferenceClass()
+    let returnReference = TokenReferenceClass()
     returnReference.ref = Token()
     return returnReference
 }
@@ -81,7 +81,7 @@ public class TokenReferenceReferenceClass{
     public var ref : TokenReference!
 }
 func TokenReferenceCreateFunction() -> TokenReferenceReferenceClass{
-    var returnReference = TokenReferenceReferenceClass()
+    let returnReference = TokenReferenceReferenceClass()
     returnReference.ref = TokenReference()
     return returnReference
 }
@@ -92,7 +92,7 @@ public class TokenTypeReferenceClass{
     public var ref : TokenType!
 }
 func TokenTypeCreateFunction() -> TokenTypeReferenceClass{
-    var returnReference = TokenTypeReferenceClass()
+    let returnReference = TokenTypeReferenceClass()
     returnReference.ref = TokenType()
     return returnReference
 }
@@ -103,7 +103,7 @@ public class TokenArrayReferenceReferenceClass{
     public var ref : TokenArrayReference!
 }
 func TokenArrayReferenceCreateFunction() -> TokenArrayReferenceReferenceClass{
-    var returnReference = TokenArrayReferenceReferenceClass()
+    let returnReference = TokenArrayReferenceReferenceClass()
     returnReference.ref = TokenArrayReference()
     return returnReference
 }
@@ -115,7 +115,7 @@ public class StringElementMapReferenceClass{
     public var ref : StringElementMap!
 }
 func StringElementMapCreateFunction() -> StringElementMapReferenceClass{
-    var returnReference = StringElementMapReferenceClass()
+    let returnReference = StringElementMapReferenceClass()
     returnReference.ref = StringElementMap()
     return returnReference
 }
@@ -128,7 +128,7 @@ public class ExampleReferenceClass{
     public var ref : Example!
 }
 func ExampleCreateFunction() -> ExampleReferenceClass{
-    var returnReference = ExampleReferenceClass()
+    let returnReference = ExampleReferenceClass()
     returnReference.ref = Example()
     return returnReference
 }
@@ -142,7 +142,7 @@ public class XReferenceClass{
     public var ref : X!
 }
 func XCreateFunction() -> XReferenceClass{
-    var returnReference = XReferenceClass()
+    let returnReference = XReferenceClass()
     returnReference.ref = X()
     return returnReference
 }
@@ -153,7 +153,7 @@ public class BooleanArrayReferenceReferenceClass{
     public var ref : BooleanArrayReference!
 }
 func BooleanArrayReferenceCreateFunction() -> BooleanArrayReferenceReferenceClass{
-    var returnReference = BooleanArrayReferenceReferenceClass()
+    let returnReference = BooleanArrayReferenceReferenceClass()
     returnReference.ref = BooleanArrayReference()
     return returnReference
 }
@@ -164,7 +164,7 @@ public class BooleanReferenceReferenceClass{
     public var ref : BooleanReference!
 }
 func BooleanReferenceCreateFunction() -> BooleanReferenceReferenceClass{
-    var returnReference = BooleanReferenceReferenceClass()
+    let returnReference = BooleanReferenceReferenceClass()
     returnReference.ref = BooleanReference()
     return returnReference
 }
@@ -175,7 +175,7 @@ public class CharacterReferenceReferenceClass{
     public var ref : CharacterReference!
 }
 func CharacterReferenceCreateFunction() -> CharacterReferenceReferenceClass{
-    var returnReference = CharacterReferenceReferenceClass()
+    let returnReference = CharacterReferenceReferenceClass()
     returnReference.ref = CharacterReference()
     return returnReference
 }
@@ -186,7 +186,7 @@ public class NumberArrayReferenceReferenceClass{
     public var ref : NumberArrayReference!
 }
 func NumberArrayReferenceCreateFunction() -> NumberArrayReferenceReferenceClass{
-    var returnReference = NumberArrayReferenceReferenceClass()
+    let returnReference = NumberArrayReferenceReferenceClass()
     returnReference.ref = NumberArrayReference()
     return returnReference
 }
@@ -197,7 +197,7 @@ public class NumberReferenceReferenceClass{
     public var ref : NumberReference!
 }
 func NumberReferenceCreateFunction() -> NumberReferenceReferenceClass{
-    var returnReference = NumberReferenceReferenceClass()
+    let returnReference = NumberReferenceReferenceClass()
     returnReference.ref = NumberReference()
     return returnReference
 }
@@ -208,7 +208,7 @@ public class StringArrayReferenceReferenceClass{
     public var ref : StringArrayReference!
 }
 func StringArrayReferenceCreateFunction() -> StringArrayReferenceReferenceClass{
-    var returnReference = StringArrayReferenceReferenceClass()
+    let returnReference = StringArrayReferenceReferenceClass()
     returnReference.ref = StringArrayReference()
     return returnReference
 }
@@ -219,7 +219,7 @@ public class StringReferenceReferenceClass{
     public var ref : StringReference!
 }
 func StringReferenceCreateFunction() -> StringReferenceReferenceClass{
-    var returnReference = StringReferenceReferenceClass()
+    let returnReference = StringReferenceReferenceClass()
     returnReference.ref = StringReference()
     return returnReference
 }
@@ -256,7 +256,7 @@ func JSONTokenize(_ stringx : inout [Character], _ tokenArrayReference : inout T
 
 
 func JSONTokenizeWithCountOption(_ json : inout [Character], _ tokenArrayReference : inout TokenArrayReference, _ countReference : inout NumberReference, _ add : Bool, _ errorMessages : inout StringArrayReference) -> Bool{
-    var add = add;
+    let add = add;
     var tokens : [Token]
     var i, t : Double
     var c : Character
@@ -415,7 +415,7 @@ func JSONTokenizeWithCountOption(_ json : inout [Character], _ tokenArrayReferen
 
 
 func GetJSONNumberToken(_ json : inout [Character], _ start : Double, _ tokenReference : inout TokenReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var start = start;
+    let start = start;
     var c : Character
     var end, i : Double
     var done, success : Bool
@@ -610,7 +610,7 @@ func IsValidJSONNumberFromExponent(_ n : inout [Character], _ i : Double, _ erro
 
 
 func IsJSONNumberCharacter(_ c : Character) -> Bool{
-    var c = c;
+    let c = c;
     var numericCharacters : [Character]
     var found : Bool
     var i : Double
@@ -632,7 +632,7 @@ func IsJSONNumberCharacter(_ c : Character) -> Bool{
 
 
 func GetJSONPrimitiveName(_ stringx : inout [Character], _ start : Double, _ errorMessages : inout StringArrayReference, _ primitive : inout [Character], _ tokenReference : inout TokenReference) -> Bool{
-    var start = start;
+    let start = start;
     var c, p : Character
     var token : Token
     var done, success : Bool
@@ -688,7 +688,7 @@ func GetJSONPrimitiveName(_ stringx : inout [Character], _ start : Double, _ err
 
 
 func GetJSONString(_ json : inout [Character], _ start : Double, _ tokenReference : inout TokenReference, _ stringLengthReference : inout NumberReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var start = start;
+    let start = start;
     var success, done : Bool
     var stringx, hex : [Character]
     var characterCount, hexReference : NumberReference
@@ -780,7 +780,7 @@ func IsValidJSONString(_ jsonString : inout [Character], _ errorMessages : inout
 
 
 func IsValidJSONStringInJSON(_ json : inout [Character], _ start : Double, _ characterCount : inout NumberReference, _ stringLengthReference : inout NumberReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var start = start;
+    let start = start;
     var success, done : Bool
     var i, j : Double
     var c : Character
@@ -849,7 +849,7 @@ func IsValidJSONStringInJSON(_ json : inout [Character], _ start : Double, _ cha
 
 
 func IsJSONIllegalControllCharacter(_ c : Character) -> Bool{
-    var c = c;
+    let c = c;
     var cnr : Double
     var isControll : Bool
 
@@ -869,7 +869,7 @@ func CreateToken(_ tokenType : inout TokenType) -> TokenReferenceClass{
     var token : Token
     token = Token()
     token.type = tokenType
-    var returnReference = TokenReferenceClass()
+    let returnReference = TokenReferenceClass()
     returnReference.ref = token
     return returnReference
 }
@@ -880,7 +880,7 @@ func CreateStringToken(_ stringx : inout [Character]) -> TokenReferenceClass{
     token = Token()
     token.type = GetTokenType(&characterArray("string").ca).ref
     token.value = stringx
-    var returnReference = TokenReferenceClass()
+    let returnReference = TokenReferenceClass()
     returnReference.ref = token
     return returnReference
 }
@@ -891,7 +891,7 @@ func CreateNumberToken(_ stringx : inout [Character]) -> TokenReferenceClass{
     token = Token()
     token.type = GetTokenType(&characterArray("number").ca).ref
     token.value = stringx
-    var returnReference = TokenReferenceClass()
+    let returnReference = TokenReferenceClass()
     returnReference.ref = token
     return returnReference
 }
@@ -922,7 +922,7 @@ func AddElementRef(_ list : inout ElementArrayReference, _ i : inout Element) ->
 
 
 func RemoveElement(_ list : inout [Element], _ n : Double) -> [Element]{
-    var n = n;
+    let n = n;
     var newlist : [Element]
     var i : Double
 
@@ -946,15 +946,15 @@ func RemoveElement(_ list : inout [Element], _ n : Double) -> [Element]{
 
 
 func GetElementRef(_ list : inout ElementArrayReference, _ i : Double) -> ElementReferenceClass{
-    var i = i;
-    var returnReference = ElementReferenceClass()
+    let i = i;
+    let returnReference = ElementReferenceClass()
     returnReference.ref = list.array[Int(i)]
     return returnReference
 }
 
 
 func RemoveElementRef(_ list : inout ElementArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.array = RemoveElement(&list.array, i)
 }
 
@@ -1075,19 +1075,19 @@ func CreateStringElement(_ stringx : inout [Character]) -> ElementReferenceClass
     element = Element()
     element.type = GetElementType(&characterArray("string").ca).ref
     element.stringx = stringx
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
 
 
 func CreateBooleanElement(_ booleanValue : Bool) -> ElementReferenceClass{
-    var booleanValue = booleanValue;
+    let booleanValue = booleanValue;
     var element : Element
     element = Element()
     element.type = GetElementType(&characterArray("booleanValue").ca).ref
     element.booleanValue = booleanValue
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
@@ -1097,38 +1097,38 @@ func CreateNullElement() -> ElementReferenceClass{
     var element : Element
     element = Element()
     element.type = GetElementType(&characterArray("nullValue").ca).ref
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
 
 
 func CreateNumberElement(_ number : Double) -> ElementReferenceClass{
-    var number = number;
+    let number = number;
     var element : Element
     element = Element()
     element.type = GetElementType(&characterArray("number").ca).ref
     element.number = number
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
 
 
 func CreateArrayElement(_ length : Double) -> ElementReferenceClass{
-    var length = length;
+    let length = length;
     var element : Element
     element = Element()
     element.type = GetElementType(&characterArray("array").ca).ref
     element.array = Array(repeating:Element(), count: Int(length))
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
 
 
 func CreateObjectElement(_ length : Double) -> ElementReferenceClass{
-    var length = length;
+    let length = length;
     var element : Element
     element = Element()
     element.type = GetElementType(&characterArray("object").ca).ref
@@ -1136,7 +1136,7 @@ func CreateObjectElement(_ length : Double) -> ElementReferenceClass{
     element.objectx.stringListRef = CreateStringArrayReferenceLengthValue(length, &characterArray("").ca).ref
     element.objectx.elementListRef = ElementArrayReference()
     element.objectx.elementListRef.array = Array(repeating:Element(), count: Int(length))
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = element
     return returnReference
 }
@@ -1318,7 +1318,7 @@ func JSONEscapedStringLength(_ stringx : inout [Character]) -> Double{
 
 
 func JSONEscapeCharacter(_ c : Character) -> [Character]{
-    var c = c;
+    let c = c;
     var code : Double
     var escaped : [Character]
     var hexNumber : StringReference
@@ -1395,7 +1395,7 @@ func JSONEscapeCharacter(_ c : Character) -> [Character]{
 
 
 func JSONMustBeEscaped(_ c : Character, _ letters : inout NumberReference) -> Bool{
-    var c = c;
+    let c = c;
     var code : Double
     var mustBeEscaped : Bool
     var q, rs, s, b, f, n, r, t : Double
@@ -1497,8 +1497,8 @@ func GetJSONValue(_ tokens : inout [Token], _ elementReference : inout ElementRe
 
 
 func GetJSONValueWithCheckOption(_ tokens : inout [Token], _ i : inout NumberReference, _ depth : Double, _ elementReference : inout ElementReference, _ add : Bool, _ counts : inout NumberArrayReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var depth = depth;
-    var add = add;
+    let depth = depth;
+    let add = add;
     var token : Token
     var str, substr : [Character]
     var stringToDecimalResult : Double
@@ -1559,8 +1559,8 @@ func GetJSONValueWithCheckOption(_ tokens : inout [Token], _ i : inout NumberRef
 
 
 func GetJSONObject(_ tokens : inout [Token], _ i : inout NumberReference, _ depth : Double, _ elementReference : inout ElementReference, _ add : Bool, _ counts : inout NumberArrayReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var depth = depth;
-    var add = add;
+    let depth = depth;
+    let add = add;
     var element, value : Element
     var done, success : Bool
     var key, colon, comma, closeCurly : Token
@@ -1647,8 +1647,8 @@ func GetJSONObject(_ tokens : inout [Token], _ i : inout NumberReference, _ dept
 
 
 func GetJSONArray(_ tokens : inout [Token], _ i : inout NumberReference, _ depth : Double, _ elementReference : inout ElementReference, _ add : Bool, _ counts : inout NumberArrayReference, _ errorMessages : inout StringArrayReference) -> Bool{
-    var depth = depth;
-    var add = add;
+    let depth = depth;
+    let add = add;
     var element, value : Element
     var nextToken, comma : Token
     var done, success : Bool
@@ -1712,7 +1712,7 @@ func GetJSONArray(_ tokens : inout [Token], _ i : inout NumberReference, _ depth
 
 
 func GetStringElementMapKeySet(_ stringElementMap : inout StringElementMap) -> StringArrayReferenceReferenceClass{
-    var returnReference = StringArrayReferenceReferenceClass()
+    let returnReference = StringArrayReferenceReferenceClass()
     returnReference.ref = stringElementMap.stringListRef
     return returnReference
 }
@@ -1732,7 +1732,7 @@ func GetObjectValue(_ stringElementMap : inout StringElementMap, _ key : inout [
         i = i + 1.0
     }
 
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = result
     return returnReference
 }
@@ -1754,7 +1754,7 @@ func GetObjectValueWithCheck(_ stringElementMap : inout StringElementMap, _ key 
         i = i + 1.0
     }
 
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = result
     return returnReference
 }
@@ -1767,7 +1767,7 @@ func PutStringElementMap(_ stringElementMap : inout StringElementMap, _ keystrin
 
 
 func SetStringElementMap(_ stringElementMap : inout StringElementMap, _ index : Double, _ keystring : inout [Character], _ value : inout Element) -> Void{
-    var index = index;
+    let index = index;
     stringElementMap.stringListRef.stringArray[Int(index)].stringx = keystring
     stringElementMap.elementListRef.array[Int(index)] = value
 }
@@ -1784,7 +1784,7 @@ func GetTokenType(_ elementTypeName : inout [Character]) -> TokenTypeReferenceCl
     et = TokenType()
     et.name = elementTypeName
 
-    var returnReference = TokenTypeReferenceClass()
+    let returnReference = TokenTypeReferenceClass()
     returnReference.ref = et
     return returnReference
 }
@@ -1829,7 +1829,7 @@ func GetAndCheckTokenType(_ elementTypeName : inout [Character], _ found : inout
         i = i + 1.0
     }
 
-    var returnReference = TokenTypeReferenceClass()
+    let returnReference = TokenTypeReferenceClass()
     returnReference.ref = tokenType
     return returnReference
 }
@@ -1862,7 +1862,7 @@ func TokenTypeEnumEquals(_ a : inout [Character], _ b : inout [Character]) -> Bo
 
 
 func JSONCompare(_ a : inout [Character], _ b : inout [Character], _ epsilon : Double, _ equal : inout BooleanReference, _ errorMessage : inout StringArrayReference) -> Bool{
-    var epsilon = epsilon;
+    let epsilon = epsilon;
     var success : Bool
     var eaRef, ebRef : ElementReference
     var ea, eb : Element
@@ -1893,7 +1893,7 @@ func JSONCompare(_ a : inout [Character], _ b : inout [Character], _ epsilon : D
 
 
 func JSONCompareElements(_ ea : inout Element, _ eb : inout Element, _ epsilon : Double) -> Bool{
-    var epsilon = epsilon;
+    let epsilon = epsilon;
     var equal : Bool
     var typeName : [Character]
 
@@ -1921,7 +1921,7 @@ func JSONCompareElements(_ ea : inout Element, _ eb : inout Element, _ epsilon :
 
 
 func JSONCompareArrays(_ ea : inout [Element], _ eb : inout [Element], _ epsilon : Double) -> Bool{
-    var epsilon = epsilon;
+    let epsilon = epsilon;
     var equals : Bool
     var i, length : Double
 
@@ -1941,7 +1941,7 @@ func JSONCompareArrays(_ ea : inout [Element], _ eb : inout [Element], _ epsilon
 
 
 func JSONCompareObjects(_ ea : inout StringElementMap, _ eb : inout StringElementMap, _ epsilon : Double) -> Bool{
-    var epsilon = epsilon;
+    let epsilon = epsilon;
     var equals : Bool
     var akeys, bkeys, i : Double
     var keys : StringArrayReference
@@ -1986,7 +1986,7 @@ func GetElementType(_ elementTypeName : inout [Character]) -> ElementTypeReferen
     et = ElementType()
     et.name = elementTypeName
 
-    var returnReference = ElementTypeReferenceClass()
+    let returnReference = ElementTypeReferenceClass()
     returnReference.ref = et
     return returnReference
 }
@@ -2025,7 +2025,7 @@ func GetAndCheckElementType(_ elementTypeName : inout [Character], _ found : ino
         i = i + 1.0
     }
 
-    var returnReference = ElementTypeReferenceClass()
+    let returnReference = ElementTypeReferenceClass()
     returnReference.ref = elementType
     return returnReference
 }
@@ -2094,7 +2094,7 @@ func mapTo(_ root : inout Element) -> ExampleReferenceClass{
     example.b = mapbTo(&GetObjectValue(&root.objectx, &characterArray("b").ca).ref.array)
     example.x = mapXTo(&GetObjectValue(&root.objectx, &characterArray("x").ca).ref.objectx).ref
 
-    var returnReference = ExampleReferenceClass()
+    let returnReference = ExampleReferenceClass()
     returnReference.ref = example
     return returnReference
 }
@@ -2113,7 +2113,7 @@ func mapXTo(_ objectx : inout StringElementMap) -> XReferenceClass{
     x.x2 = GetObjectValue(&objectx, &characterArray("x2").ca).ref.booleanValue
     x.x3 = GetObjectValue(&objectx, &characterArray("x3").ca).ref.booleanValue
 
-    var returnReference = XReferenceClass()
+    let returnReference = XReferenceClass()
     returnReference.ref = x
     return returnReference
 }
@@ -2186,7 +2186,7 @@ func createExampleJSON() -> ElementReferenceClass{
     SetStringElementMap(&root.objectx, 1.0, &characterArray("b").ca, &array)
     SetStringElementMap(&root.objectx, 2.0, &characterArray("x").ca, &innerObject)
 
-    var returnReference = ElementReferenceClass()
+    let returnReference = ElementReferenceClass()
     returnReference.ref = root
     return returnReference
 }
@@ -2484,12 +2484,12 @@ func testTokenizer1() -> Double{
 
 
 func CreateBooleanReference(_ value : Bool) -> BooleanReferenceReferenceClass{
-    var value = value;
+    let value = value;
     var ref : BooleanReference
     ref = BooleanReference()
     ref.booleanValue = value
 
-    var returnReference = BooleanReferenceReferenceClass()
+    let returnReference = BooleanReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2500,15 +2500,15 @@ func CreateBooleanArrayReference(_ value : inout [Bool]) -> BooleanArrayReferenc
     ref = BooleanArrayReference()
     ref.booleanArray = value
 
-    var returnReference = BooleanArrayReferenceReferenceClass()
+    let returnReference = BooleanArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
 
 
 func CreateBooleanArrayReferenceLengthValue(_ length : Double, _ value : Bool) -> BooleanArrayReferenceReferenceClass{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var ref : BooleanArrayReference
     var i : Double
     ref = BooleanArrayReference()
@@ -2520,7 +2520,7 @@ func CreateBooleanArrayReferenceLengthValue(_ length : Double, _ value : Bool) -
         i = i + 1.0
     }
 
-    var returnReference = BooleanArrayReferenceReferenceClass()
+    let returnReference = BooleanArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2533,24 +2533,24 @@ func FreeBooleanArrayReference(_ booleanArrayReference : inout BooleanArrayRefer
 
 
 func CreateCharacterReference(_ value : Character) -> CharacterReferenceReferenceClass{
-    var value = value;
+    let value = value;
     var ref : CharacterReference
     ref = CharacterReference()
     ref.characterValue = value
 
-    var returnReference = CharacterReferenceReferenceClass()
+    let returnReference = CharacterReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
 
 
 func CreateNumberReference(_ value : Double) -> NumberReferenceReferenceClass{
-    var value = value;
+    let value = value;
     var ref : NumberReference
     ref = NumberReference()
     ref.numberValue = value
 
-    var returnReference = NumberReferenceReferenceClass()
+    let returnReference = NumberReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2561,15 +2561,15 @@ func CreateNumberArrayReference(_ value : inout [Double]) -> NumberArrayReferenc
     ref = NumberArrayReference()
     ref.numberArray = value
 
-    var returnReference = NumberArrayReferenceReferenceClass()
+    let returnReference = NumberArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
 
 
 func CreateNumberArrayReferenceLengthValue(_ length : Double, _ value : Double) -> NumberArrayReferenceReferenceClass{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var ref : NumberArrayReference
     var i : Double
     ref = NumberArrayReference()
@@ -2581,7 +2581,7 @@ func CreateNumberArrayReferenceLengthValue(_ length : Double, _ value : Double) 
         i = i + 1.0
     }
 
-    var returnReference = NumberArrayReferenceReferenceClass()
+    let returnReference = NumberArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2598,15 +2598,15 @@ func CreateStringReference(_ value : inout [Character]) -> StringReferenceRefere
     ref = StringReference()
     ref.stringx = value
 
-    var returnReference = StringReferenceReferenceClass()
+    let returnReference = StringReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
 
 
 func CreateStringReferenceLengthValue(_ length : Double, _ value : Character) -> StringReferenceReferenceClass{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var ref : StringReference
     var i : Double
     ref = StringReference()
@@ -2618,7 +2618,7 @@ func CreateStringReferenceLengthValue(_ length : Double, _ value : Character) ->
         i = i + 1.0
     }
 
-    var returnReference = StringReferenceReferenceClass()
+    let returnReference = StringReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2635,14 +2635,14 @@ func CreateStringArrayReference(_ strings : inout [StringReference]) -> StringAr
     ref = StringArrayReference()
     ref.stringArray = strings
 
-    var returnReference = StringArrayReferenceReferenceClass()
+    let returnReference = StringArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
 
 
 func CreateStringArrayReferenceLengthValue(_ length : Double, _ value : inout [Character]) -> StringArrayReferenceReferenceClass{
-    var length = length;
+    let length = length;
     var ref : StringArrayReference
     var i : Double
     ref = StringArrayReference()
@@ -2654,7 +2654,7 @@ func CreateStringArrayReferenceLengthValue(_ length : Double, _ value : inout [C
         i = i + 1.0
     }
 
-    var returnReference = StringArrayReferenceReferenceClass()
+    let returnReference = StringArrayReferenceReferenceClass()
     returnReference.ref = ref
     return returnReference
 }
@@ -2685,14 +2685,14 @@ func strWriteStringToStingStream(_ stream : inout [Character], _ index : inout N
 
 
 func strWriteCharacterToStingStream(_ stream : inout [Character], _ index : inout NumberReference, _ src : Character) -> Void{
-    var src = src;
+    let src = src;
     stream[Int(index.numberValue)] = src
     index.numberValue = index.numberValue + 1.0
 }
 
 
 func strWriteBooleanToStingStream(_ stream : inout [Character], _ index : inout NumberReference, _ src : Bool) -> Void{
-    var src = src;
+    let src = src;
     if(src){
         strWriteStringToStingStream(&stream, &index, &characterArray("true").ca)
     }else{
@@ -2702,8 +2702,8 @@ func strWriteBooleanToStingStream(_ stream : inout [Character], _ index : inout 
 
 
 func strSubstringWithCheck(_ stringx : inout [Character], _ from : Double, _ to : Double, _ stringReference : inout StringReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var success : Bool
 
     if(from >= 0.0 && from <= Double(stringx.count) && to >= 0.0 && to <= Double(stringx.count) && from <= to){
@@ -2718,8 +2718,8 @@ func strSubstringWithCheck(_ stringx : inout [Character], _ from : Double, _ to 
 
 
 func strSubstring(_ stringx : inout [Character], _ from : Double, _ to : Double) -> [Character]{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var n : [Character]
     var i, length : Double
 
@@ -2771,7 +2771,7 @@ func strConcatenateString(_ s1 : inout [Character], _ s2 : inout [Character]) ->
 
 
 func strAppendCharacter(_ stringx : inout [Character], _ c : Character) -> [Character]{
-    var c = c;
+    let c = c;
     var newString : [Character]
 
     newString = strConcatenateCharacter(&stringx, c)
@@ -2783,7 +2783,7 @@ func strAppendCharacter(_ stringx : inout [Character], _ c : Character) -> [Char
 
 
 func strConcatenateCharacter(_ stringx : inout [Character], _ c : Character) -> [Character]{
-    var c = c;
+    let c = c;
     var newString : [Character]
     var i : Double
     newString = Array(repeating:Character(" "), count: Int(Double(stringx.count) + 1.0))
@@ -2801,7 +2801,7 @@ func strConcatenateCharacter(_ stringx : inout [Character], _ c : Character) -> 
 
 
 func strSplitByCharacter(_ toSplit : inout [Character], _ splitBy : Character) -> [StringReference]{
-    var splitBy = splitBy;
+    let splitBy = splitBy;
     var split : [StringReference]
     var stringToSplitBy : [Character]
 
@@ -2817,7 +2817,7 @@ func strSplitByCharacter(_ toSplit : inout [Character], _ splitBy : Character) -
 
 
 func strIndexOfCharacter(_ stringx : inout [Character], _ character : Character, _ indexReference : inout NumberReference) -> Bool{
-    var character = character;
+    let character = character;
     var i : Double
     var found : Bool
 
@@ -2836,7 +2836,7 @@ func strIndexOfCharacter(_ stringx : inout [Character], _ character : Character,
 
 
 func strSubstringEqualsWithCheck(_ stringx : inout [Character], _ from : Double, _ substring : inout [Character], _ equalsReference : inout BooleanReference) -> Bool{
-    var from = from;
+    let from = from;
     var success : Bool
 
     if(from < Double(stringx.count)){
@@ -2851,7 +2851,7 @@ func strSubstringEqualsWithCheck(_ stringx : inout [Character], _ from : Double,
 
 
 func strSubstringEquals(_ stringx : inout [Character], _ from : Double, _ substring : inout [Character]) -> Bool{
-    var from = from;
+    let from = from;
     var i : Double
     var equal : Bool
 
@@ -2887,7 +2887,7 @@ func strIndexOfString(_ stringx : inout [Character], _ substring : inout [Charac
 
 
 func strContainsCharacter(_ stringx : inout [Character], _ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var i : Double
     var found : Bool
 
@@ -2982,8 +2982,8 @@ func strReplaceString(_ stringx : inout [Character], _ toReplace : inout [Charac
 
 
 func strReplaceCharacter(_ stringx : inout [Character], _ toReplace : Character, _ replaceWith : Character) -> [Character]{
-    var toReplace = toReplace;
-    var replaceWith = replaceWith;
+    let toReplace = toReplace;
+    let replaceWith = replaceWith;
     var result : [Character]
     var i : Double
 
@@ -3167,7 +3167,7 @@ func nCreateStringScientificNotationDecimalFromNumber(_ decimalx : Double) -> [C
 
 
 func nCreateStringDecimalFromNumber(_ decimalx : Double) -> [Character]{
-    var decimalx = decimalx;
+    let decimalx = decimalx;
     var stringReference : StringReference
     stringReference = StringReference()
 
@@ -3180,7 +3180,7 @@ func nCreateStringDecimalFromNumber(_ decimalx : Double) -> [Character]{
 
 func nCreateStringFromNumberWithCheck(_ decimalx : Double, _ basex : Double, _ stringReference : inout StringReference) -> Bool{
     var decimalx = decimalx;
-    var basex = basex;
+    let basex = basex;
     var stringx : [Character]
     var maximumDigits : Double
     var digitPosition : Double
@@ -3265,7 +3265,7 @@ func nCreateStringFromNumberWithCheck(_ decimalx : Double, _ basex : Double, _ s
 
 
 func nGetMaximumDigitsForBase(_ basex : Double) -> Double{
-    var basex = basex;
+    let basex = basex;
     var t : Double
     t = pow(10.0, 15.0)
     return floor(log10(t)/log10(basex))
@@ -3273,8 +3273,8 @@ func nGetMaximumDigitsForBase(_ basex : Double) -> Double{
 
 
 func nGetFirstDigitPosition(_ decimalx : Double, _ basex : Double) -> Double{
-    var decimalx = decimalx;
-    var basex = basex;
+    let decimalx = decimalx;
+    let basex = basex;
     var power : Double
     var t : Double
     power = ceil(log10(decimalx)/log10(basex))
@@ -3292,8 +3292,8 @@ func nGetFirstDigitPosition(_ decimalx : Double, _ basex : Double) -> Double{
 
 
 func nGetSingleDigitCharacterFromNumberWithCheck(_ c : Double, _ basex : Double, _ characterReference : inout CharacterReference) -> Bool{
-    var c = c;
-    var basex = basex;
+    let c = c;
+    let basex = basex;
     var numberTable : [Character]
     var success : Bool
     numberTable = nGetDigitCharacterTable()
@@ -3339,7 +3339,7 @@ func nCreateNumberFromDecimalString(_ stringx : inout [Character]) -> Double{
 
 
 func nCreateNumberFromStringWithCheck(_ stringx : inout [Character], _ basex : Double, _ numberReference : inout NumberReference, _ errorMessage : inout StringReference) -> Bool{
-    var basex = basex;
+    let basex = basex;
     var success : Bool
     var numberIsPositive, exponentIsPositive : BooleanReference
     var beforePoint, afterPoint, exponent : NumberArrayReference
@@ -3364,9 +3364,9 @@ func nCreateNumberFromStringWithCheck(_ stringx : inout [Character], _ basex : D
 
 
 func nCreateNumberFromParts(_ basex : Double, _ numberIsPositive : Bool, _ beforePoint : inout [Double], _ afterPoint : inout [Double], _ exponentIsPositive : Bool, _ exponent : inout [Double]) -> Double{
-    var basex = basex;
-    var numberIsPositive = numberIsPositive;
-    var exponentIsPositive = exponentIsPositive;
+    let basex = basex;
+    let numberIsPositive = numberIsPositive;
+    let exponentIsPositive = exponentIsPositive;
     var n, i, p, e : Double
     n = 0.0
 
@@ -3407,7 +3407,7 @@ func nCreateNumberFromParts(_ basex : Double, _ numberIsPositive : Bool, _ befor
 
 
 func nExtractPartsFromNumberString(_ n : inout [Character], _ basex : Double, _ numberIsPositive : inout BooleanReference, _ beforePoint : inout NumberArrayReference, _ afterPoint : inout NumberArrayReference, _ exponentIsPositive : inout BooleanReference, _ exponent : inout NumberArrayReference, _ errorMessages : inout StringReference) -> Bool{
-    var basex = basex;
+    let basex = basex;
     var i : Double
     var success : Bool
     i = 0.0
@@ -3431,7 +3431,7 @@ func nExtractPartsFromNumberString(_ n : inout [Character], _ basex : Double, _ 
 
 
 func nExtractPartsFromNumberStringFromSign(_ n : inout [Character], _ basex : Double, _ i : Double, _ beforePoint : inout NumberArrayReference, _ afterPoint : inout NumberArrayReference, _ exponentIsPositive : inout BooleanReference, _ exponent : inout NumberArrayReference, _ errorMessages : inout StringReference) -> Bool{
-    var basex = basex;
+    let basex = basex;
     var i = i;
     var success, done : Bool
     var count, j : Double
@@ -3470,7 +3470,7 @@ func nExtractPartsFromNumberStringFromSign(_ n : inout [Character], _ basex : Do
 
 
 func nExtractPartsFromNumberStringFromPointOrExponent(_ n : inout [Character], _ basex : Double, _ i : Double, _ afterPoint : inout NumberArrayReference, _ exponentIsPositive : inout BooleanReference, _ exponent : inout NumberArrayReference, _ errorMessages : inout StringReference) -> Bool{
-    var basex = basex;
+    let basex = basex;
     var i = i;
     var success, done : Bool
     var count, j : Double
@@ -3526,7 +3526,7 @@ func nExtractPartsFromNumberStringFromPointOrExponent(_ n : inout [Character], _
 
 
 func nExtractPartsFromNumberStringFromExponent(_ n : inout [Character], _ basex : Double, _ i : Double, _ exponentIsPositive : inout BooleanReference, _ exponent : inout NumberArrayReference, _ errorMessages : inout StringReference) -> Bool{
-    var basex = basex;
+    let basex = basex;
     var i = i;
     var success, done : Bool
     var count, j : Double
@@ -3586,8 +3586,8 @@ func nExtractPartsFromNumberStringFromExponent(_ n : inout [Character], _ basex 
 
 
 func nGetNumberFromNumberCharacterForBase(_ c : Character, _ basex : Double) -> Double{
-    var c = c;
-    var basex = basex;
+    let c = c;
+    let basex = basex;
     var numberTable : [Character]
     var i : Double
     var position : Double
@@ -3607,8 +3607,8 @@ func nGetNumberFromNumberCharacterForBase(_ c : Character, _ basex : Double) -> 
 
 
 func nCharacterIsNumberCharacterInBase(_ c : Character, _ basex : Double) -> Bool{
-    var c = c;
-    var basex = basex;
+    let c = c;
+    let basex = basex;
     var numberTable : [Character]
     var i : Double
     var found : Bool
@@ -3679,7 +3679,7 @@ func nStringToNumberArrayWithCheck(_ str : inout [Character], _ numberArrayRefer
 
 
 func AddNumber(_ list : inout [Double], _ a : Double) -> [Double]{
-    var a = a;
+    let a = a;
     var newlist : [Double]
     var i : Double
 
@@ -3698,13 +3698,13 @@ func AddNumber(_ list : inout [Double], _ a : Double) -> [Double]{
 
 
 func AddNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.numberArray = AddNumber(&list.numberArray, i)
 }
 
 
 func RemoveNumber(_ list : inout [Double], _ n : Double) -> [Double]{
-    var n = n;
+    let n = n;
     var newlist : [Double]
     var i : Double
 
@@ -3732,13 +3732,13 @@ func RemoveNumber(_ list : inout [Double], _ n : Double) -> [Double]{
 
 
 func GetNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Double{
-    var i = i;
+    let i = i;
     return list.numberArray[Int(i)]
 }
 
 
 func RemoveNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.numberArray = RemoveNumber(&list.numberArray, i)
 }
 
@@ -3768,7 +3768,7 @@ func AddStringRef(_ list : inout StringArrayReference, _ i : inout StringReferen
 
 
 func RemoveString(_ list : inout [StringReference], _ n : Double) -> [StringReference]{
-    var n = n;
+    let n = n;
     var newlist : [StringReference]
     var i : Double
 
@@ -3796,21 +3796,21 @@ func RemoveString(_ list : inout [StringReference], _ n : Double) -> [StringRefe
 
 
 func GetStringRef(_ list : inout StringArrayReference, _ i : Double) -> StringReferenceReferenceClass{
-    var i = i;
-    var returnReference = StringReferenceReferenceClass()
+    let i = i;
+    let returnReference = StringReferenceReferenceClass()
     returnReference.ref = list.stringArray[Int(i)]
     return returnReference
 }
 
 
 func RemoveStringRef(_ list : inout StringArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.stringArray = RemoveString(&list.stringArray, i)
 }
 
 
 func AddBoolean(_ list : inout [Bool], _ a : Bool) -> [Bool]{
-    var a = a;
+    let a = a;
     var newlist : [Bool]
     var i : Double
 
@@ -3829,13 +3829,13 @@ func AddBoolean(_ list : inout [Bool], _ a : Bool) -> [Bool]{
 
 
 func AddBooleanRef(_ list : inout BooleanArrayReference, _ i : Bool) -> Void{
-    var i = i;
+    let i = i;
     list.booleanArray = AddBoolean(&list.booleanArray, i)
 }
 
 
 func RemoveBoolean(_ list : inout [Bool], _ n : Double) -> [Bool]{
-    var n = n;
+    let n = n;
     var newlist : [Bool]
     var i : Double
 
@@ -3863,19 +3863,19 @@ func RemoveBoolean(_ list : inout [Bool], _ n : Double) -> [Bool]{
 
 
 func GetBooleanRef(_ list : inout BooleanArrayReference, _ i : Double) -> Bool{
-    var i = i;
+    let i = i;
     return list.booleanArray[Int(i)]
 }
 
 
 func RemoveDecimalRef(_ list : inout BooleanArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.booleanArray = RemoveBoolean(&list.booleanArray, i)
 }
 
 
 func AddCharacter(_ list : inout [Character], _ a : Character) -> [Character]{
-    var a = a;
+    let a = a;
     var newlist : [Character]
     var i : Double
 
@@ -3894,13 +3894,13 @@ func AddCharacter(_ list : inout [Character], _ a : Character) -> [Character]{
 
 
 func AddCharacterRef(_ list : inout StringReference, _ i : Character) -> Void{
-    var i = i;
+    let i = i;
     list.stringx = AddCharacter(&list.stringx, i)
 }
 
 
 func RemoveCharacter(_ list : inout [Character], _ n : Double) -> [Character]{
-    var n = n;
+    let n = n;
     var newlist : [Character]
     var i : Double
 
@@ -3928,31 +3928,31 @@ func RemoveCharacter(_ list : inout [Character], _ n : Double) -> [Character]{
 
 
 func GetCharacterRef(_ list : inout StringReference, _ i : Double) -> Character{
-    var i = i;
+    let i = i;
     return list.stringx[Int(i)]
 }
 
 
 func RemoveCharacterRef(_ list : inout StringReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.stringx = RemoveCharacter(&list.stringx, i)
 }
 
 
 func Negate(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return -x
 }
 
 
 func Positive(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return +x
 }
 
 
 func Factorial(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     var i, f : Double
     f = 1.0
 
@@ -3967,13 +3967,13 @@ func Factorial(_ x : Double) -> Double{
 
 
 func Roundx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return floor(x + 0.5)
 }
 
 
 func BankersRound(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     var r : Double
     if(Absolute(x - Truncate(x)) == 0.5){
         if(!DivisibleBy(Roundx(x), 2.0)){
@@ -3990,19 +3990,19 @@ func BankersRound(_ x : Double) -> Double{
 
 
 func Ceil(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return ceil(x)
 }
 
 
 func Floorx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return floor(x)
 }
 
 
 func Truncate(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     var t : Double
     if(x >= 0.0){
         t = floor(x)
@@ -4015,62 +4015,62 @@ func Truncate(_ x : Double) -> Double{
 
 
 func Absolute(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return abs(x)
 }
 
 
 func Logarithm(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return log10(x)
 }
 
 
 func NaturalLogarithm(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return log(x)
 }
 
 
 func Sinx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return sin(x)
 }
 
 
 func Cosx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return cos(x)
 }
 
 
 func Tanx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return tan(x)
 }
 
 
 func Asinx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return asin(x)
 }
 
 
 func Acosx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return acos(x)
 }
 
 
 func Atanx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return atan(x)
 }
 
 
 func Atan2(_ y : Double, _ x : Double) -> Double{
-    var y = y;
-    var x = x;
+    let y = y;
+    let x = x;
     var a : Double
     a = 0.0
 
@@ -4091,27 +4091,27 @@ func Atan2(_ y : Double, _ x : Double) -> Double{
 
 
 func Squareroot(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return sqrt(x)
 }
 
 
 func Expx(_ x : Double) -> Double{
-    var x = x;
+    let x = x;
     return exp(x)
 }
 
 
 func DivisibleBy(_ a : Double, _ b : Double) -> Bool{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     return ((a.truncatingRemainder(dividingBy:b)) == 0.0)
 }
 
 
 func Combinations(_ n : Double, _ k : Double) -> Double{
-    var n = n;
-    var k = k;
+    let n = n;
+    let k = k;
     return Factorial(n)/(Factorial(n - k)*Factorial(k))
 }
 
@@ -4119,7 +4119,7 @@ func Combinations(_ n : Double, _ k : Double) -> Double{
 func EpsilonCompareApproximateDigits(_ a : Double, _ b : Double, _ digits : Double) -> Bool{
     var a = a;
     var b = b;
-    var digits = digits;
+    let digits = digits;
     var ad, bd, d, epsilon : Double
     var ret : Bool
     if(a < 0.0 && b < 0.0 || a > 0.0 && b > 0.0){
@@ -4141,9 +4141,9 @@ func EpsilonCompareApproximateDigits(_ a : Double, _ b : Double, _ digits : Doub
 
 
 func EpsilonCompare(_ a : Double, _ b : Double, _ epsilon : Double) -> Bool{
-    var a = a;
-    var b = b;
-    var epsilon = epsilon;
+    let a = a;
+    let b = b;
+    let epsilon = epsilon;
     return abs(a - b) < epsilon
 }
 
@@ -4163,14 +4163,14 @@ func GreatestCommonDivisor(_ a : Double, _ b : Double) -> Double{
 
 
 func IsInteger(_ a : Double) -> Bool{
-    var a = a;
+    let a = a;
     return (a - floor(a)) == 0.0
 }
 
 
 func GreatestCommonDivisorWithCheck(_ a : Double, _ b : Double, _ gcdReference : inout NumberReference) -> Bool{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     var success : Bool
     var gcd : Double
     if(IsInteger(a) && IsInteger(b)){
@@ -4186,8 +4186,8 @@ func GreatestCommonDivisorWithCheck(_ a : Double, _ b : Double, _ gcdReference :
 
 
 func LeastCommonMultiple(_ a : Double, _ b : Double) -> Double{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     var lcm : Double
     if(a > 0.0 && b > 0.0){
         lcm = abs(a*b)/GreatestCommonDivisor(a, b)
@@ -4200,7 +4200,7 @@ func LeastCommonMultiple(_ a : Double, _ b : Double) -> Double{
 
 
 func Sign(_ a : Double) -> Double{
-    var a = a;
+    let a = a;
     var s : Double
     if(a > 0.0){
         s = 1.0
@@ -4215,22 +4215,22 @@ func Sign(_ a : Double) -> Double{
 
 
 func Max(_ a : Double, _ b : Double) -> Double{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     return max(a, b)
 }
 
 
 func Min(_ a : Double, _ b : Double) -> Double{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     return min(a, b)
 }
 
 
 func Power(_ a : Double, _ b : Double) -> Double{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     return pow(a, b)
 }
 
@@ -4329,7 +4329,7 @@ func StringsEqual(_ a : inout [Character], _ b : inout [Character]) -> Bool{
 
 
 func FillNumberArray(_ a : inout [Double], _ value : Double) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
 
     i = 0.0
@@ -4341,7 +4341,7 @@ func FillNumberArray(_ a : inout [Double], _ value : Double) -> Void{
 
 
 func FillString(_ a : inout [Character], _ value : Character) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
 
     i = 0.0
@@ -4353,7 +4353,7 @@ func FillString(_ a : inout [Character], _ value : Character) -> Void{
 
 
 func FillBooleanArray(_ a : inout [Bool], _ value : Bool) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
 
     i = 0.0
@@ -4365,9 +4365,9 @@ func FillBooleanArray(_ a : inout [Bool], _ value : Bool) -> Void{
 
 
 func FillNumberArrayRange(_ a : inout [Double], _ value : Double, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i, length : Double
     var success : Bool
 
@@ -4389,9 +4389,9 @@ func FillNumberArrayRange(_ a : inout [Double], _ value : Double, _ from : Doubl
 
 
 func FillBooleanArrayRange(_ a : inout [Bool], _ value : Bool, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i, length : Double
     var success : Bool
 
@@ -4413,9 +4413,9 @@ func FillBooleanArrayRange(_ a : inout [Bool], _ value : Bool, _ from : Double, 
 
 
 func FillStringRange(_ a : inout [Character], _ value : Character, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i, length : Double
     var success : Bool
 
@@ -4485,8 +4485,8 @@ func CopyString(_ a : inout [Character]) -> [Character]{
 
 
 func CopyNumberArrayRange(_ a : inout [Double], _ from : Double, _ to : Double, _ copyReference : inout NumberArrayReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Double]
     var success : Bool
@@ -4512,8 +4512,8 @@ func CopyNumberArrayRange(_ a : inout [Double], _ from : Double, _ to : Double, 
 
 
 func CopyBooleanArrayRange(_ a : inout [Bool], _ from : Double, _ to : Double, _ copyReference : inout BooleanArrayReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Bool]
     var success : Bool
@@ -4539,8 +4539,8 @@ func CopyBooleanArrayRange(_ a : inout [Bool], _ from : Double, _ to : Double, _
 
 
 func CopyStringRange(_ a : inout [Character], _ from : Double, _ to : Double, _ copyReference : inout StringReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Character]
     var success : Bool
@@ -4566,15 +4566,15 @@ func CopyStringRange(_ a : inout [Character], _ from : Double, _ to : Double, _ 
 
 
 func IsLastElement(_ length : Double, _ index : Double) -> Bool{
-    var length = length;
-    var index = index;
+    let length = length;
+    let index = index;
     return index + 1.0 == length
 }
 
 
 func CreateNumberArray(_ length : Double, _ value : Double) -> [Double]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Double]
 
     array = Array(repeating:Double(), count: Int(length))
@@ -4585,8 +4585,8 @@ func CreateNumberArray(_ length : Double, _ value : Double) -> [Double]{
 
 
 func CreateBooleanArray(_ length : Double, _ value : Bool) -> [Bool]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Bool]
 
     array = Array(repeating:Bool(), count: Int(length))
@@ -4597,8 +4597,8 @@ func CreateBooleanArray(_ length : Double, _ value : Bool) -> [Bool]{
 
 
 func CreateString(_ length : Double, _ value : Character) -> [Character]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Character]
 
     array = Array(repeating:Character(" "), count: Int(length))
@@ -4609,8 +4609,8 @@ func CreateString(_ length : Double, _ value : Character) -> [Character]{
 
 
 func SwapElementsOfArray(_ A : inout [Double], _ ai : Double, _ bi : Double) -> Void{
-    var ai = ai;
-    var bi = bi;
+    let ai = ai;
+    let bi = bi;
     var tmp : Double
 
     tmp = A[Int(ai)]
@@ -4620,7 +4620,7 @@ func SwapElementsOfArray(_ A : inout [Double], _ ai : Double, _ bi : Double) -> 
 
 
 func charToLowerCase(_ character : Character) -> Character{
-    var character = character;
+    let character = character;
     var toReturn : Character
 
     toReturn = character
@@ -4683,7 +4683,7 @@ func charToLowerCase(_ character : Character) -> Character{
 
 
 func charToUpperCase(_ character : Character) -> Character{
-    var character = character;
+    let character = character;
     var toReturn : Character
 
     toReturn = character
@@ -4746,7 +4746,7 @@ func charToUpperCase(_ character : Character) -> Character{
 
 
 func charIsUpperCase(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isUpper : Bool
 
     isUpper = false
@@ -4809,7 +4809,7 @@ func charIsUpperCase(_ character : Character) -> Bool{
 
 
 func charIsLowerCase(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isLower : Bool
 
     isLower = false
@@ -4872,13 +4872,13 @@ func charIsLowerCase(_ character : Character) -> Bool{
 
 
 func charIsLetter(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     return charIsUpperCase(character) || charIsLowerCase(character)
 }
 
 
 func charIsNumber(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isNumberx : Bool
 
     isNumberx = false
@@ -4909,7 +4909,7 @@ func charIsNumber(_ character : Character) -> Bool{
 
 
 func charIsWhiteSpace(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isWhiteSpacex : Bool
 
     isWhiteSpacex = false
@@ -4928,7 +4928,7 @@ func charIsWhiteSpace(_ character : Character) -> Bool{
 
 
 func charIsSymbol(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isSymbolx : Bool
 
     isSymbolx = false
@@ -5003,7 +5003,7 @@ func charIsSymbol(_ character : Character) -> Bool{
 
 
 func AssertFalse(_ b : Bool, _ failures : inout NumberReference) -> Void{
-    var b = b;
+    let b = b;
     if(b){
         failures.numberValue = failures.numberValue + 1.0
     }
@@ -5011,7 +5011,7 @@ func AssertFalse(_ b : Bool, _ failures : inout NumberReference) -> Void{
 
 
 func AssertTrue(_ b : Bool, _ failures : inout NumberReference) -> Void{
-    var b = b;
+    let b = b;
     if(!b){
         failures.numberValue = failures.numberValue + 1.0
     }
@@ -5019,8 +5019,8 @@ func AssertTrue(_ b : Bool, _ failures : inout NumberReference) -> Void{
 
 
 func AssertEquals(_ a : Double, _ b : Double, _ failures : inout NumberReference) -> Void{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     if(a != b){
         failures.numberValue = failures.numberValue + 1.0
     }
@@ -5028,8 +5028,8 @@ func AssertEquals(_ a : Double, _ b : Double, _ failures : inout NumberReference
 
 
 func AssertBooleansEqual(_ a : Bool, _ b : Bool, _ failures : inout NumberReference) -> Void{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     if(a != b){
         failures.numberValue = failures.numberValue + 1.0
     }
@@ -5037,8 +5037,8 @@ func AssertBooleansEqual(_ a : Bool, _ b : Bool, _ failures : inout NumberRefere
 
 
 func AssertCharactersEqual(_ a : Character, _ b : Character, _ failures : inout NumberReference) -> Void{
-    var a = a;
-    var b = b;
+    let a = a;
+    let b = b;
     if(a != b){
         failures.numberValue = failures.numberValue + 1.0
     }
@@ -5098,8 +5098,8 @@ func AssertStringArraysEqual(_ a : inout [StringReference], _ b : inout [StringR
 
 
 func SubstringWithCheck(_ stringx : inout [Character], _ from : Double, _ to : Double, _ stringReference : inout StringReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var success : Bool
     if(from < Double(stringx.count) && to < Double(stringx.count) && from <= to && from >= 0.0 && to >= 0.0){
         stringReference.stringx = Substring(&stringx, from, to)
@@ -5113,8 +5113,8 @@ func SubstringWithCheck(_ stringx : inout [Character], _ from : Double, _ to : D
 
 
 func Substring(_ stringx : inout [Character], _ from : Double, _ to : Double) -> [Character]{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var n : [Character]
     var i : Double
     n = Array(repeating:Character(" "), count: Int(max(to - from, 0.0)))
@@ -5161,7 +5161,7 @@ func ConcatenateString(_ stringx : inout [Character], _ s : inout [Character]) -
 
 
 func AppendCharacter(_ stringx : inout [Character], _ c : Character) -> [Character]{
-    var c = c;
+    let c = c;
     var newString : [Character]
     newString = ConcatenateCharacter(&stringx, c)
 
@@ -5172,7 +5172,7 @@ func AppendCharacter(_ stringx : inout [Character], _ c : Character) -> [Charact
 
 
 func ConcatenateCharacter(_ stringx : inout [Character], _ c : Character) -> [Character]{
-    var c = c;
+    let c = c;
     var newString : [Character]
     var i : Double
     newString = Array(repeating:Character(" "), count: Int(Double(stringx.count) + 1.0))
@@ -5190,7 +5190,7 @@ func ConcatenateCharacter(_ stringx : inout [Character], _ c : Character) -> [Ch
 
 
 func SplitByCharacter(_ toSplit : inout [Character], _ splitBy : Character) -> [StringReference]{
-    var splitBy = splitBy;
+    let splitBy = splitBy;
     var split : [StringReference]
     var stringToSplitBy : [Character]
     stringToSplitBy = Array(repeating:Character(" "), count: Int(1))
@@ -5205,7 +5205,7 @@ func SplitByCharacter(_ toSplit : inout [Character], _ splitBy : Character) -> [
 
 
 func IndexOfCharacter(_ stringx : inout [Character], _ character : Character, _ indexReference : inout NumberReference) -> Bool{
-    var character = character;
+    let character = character;
     var i : Double
     var found : Bool
     found = false
@@ -5223,7 +5223,7 @@ func IndexOfCharacter(_ stringx : inout [Character], _ character : Character, _ 
 
 
 func SubstringEqualsWithCheck(_ stringx : inout [Character], _ from : Double, _ substring : inout [Character], _ equalsReference : inout BooleanReference) -> Bool{
-    var from = from;
+    let from = from;
     var success : Bool
     if(from < Double(stringx.count)){
         success = true
@@ -5237,7 +5237,7 @@ func SubstringEqualsWithCheck(_ stringx : inout [Character], _ from : Double, _ 
 
 
 func SubstringEquals(_ stringx : inout [Character], _ from : Double, _ substring : inout [Character]) -> Bool{
-    var from = from;
+    let from = from;
     var i : Double
     var equal : Bool
     equal = true
@@ -5271,7 +5271,7 @@ func IndexOfString(_ stringx : inout [Character], _ substring : inout [Character
 
 
 func ContainsCharacter(_ stringx : inout [Character], _ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     return IndexOfCharacter(&stringx, character, &NumberReferenceCreateFunction().ref)
 }
 
@@ -5349,8 +5349,8 @@ func ReplacesString(_ stringx : inout [Character], _ toReplace : inout [Characte
 
 
 func ReplaceCharacter(_ stringx : inout [Character], _ toReplace : Character, _ replaceWith : Character) -> [Character]{
-    var toReplace = toReplace;
-    var replaceWith = replaceWith;
+    let toReplace = toReplace;
+    let replaceWith = replaceWith;
     var result : [Character]
     var i : Double
     result = Array(repeating:Character(" "), count: Int(0))
@@ -5467,7 +5467,7 @@ func SplitByString(_ toSplit : inout [Character], _ splitBy : inout [Character])
 
 
 func lAddNumber(_ list : inout [Double], _ a : Double) -> [Double]{
-    var a = a;
+    let a = a;
     var newlist : [Double]
     var i : Double
     newlist = Array(repeating:Double(), count: Int(Double(list.count) + 1.0))
@@ -5485,13 +5485,13 @@ func lAddNumber(_ list : inout [Double], _ a : Double) -> [Double]{
 
 
 func lAddNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.numberArray = lAddNumber(&list.numberArray, i)
 }
 
 
 func lRemoveNumber(_ list : inout [Double], _ n : Double) -> [Double]{
-    var n = n;
+    let n = n;
     var newlist : [Double]
     var i : Double
     newlist = Array(repeating:Double(), count: Int(Double(list.count) - 1.0))
@@ -5514,13 +5514,13 @@ func lRemoveNumber(_ list : inout [Double], _ n : Double) -> [Double]{
 
 
 func lGetNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Double{
-    var i = i;
+    let i = i;
     return list.numberArray[Int(i)]
 }
 
 
 func lRemoveNumberRef(_ list : inout NumberArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.numberArray = lRemoveNumber(&list.numberArray, i)
 }
 
@@ -5549,7 +5549,7 @@ func lAddStringRef(_ list : inout StringArrayReference, _ i : inout StringRefere
 
 
 func lRemoveString(_ list : inout [StringReference], _ n : Double) -> [StringReference]{
-    var n = n;
+    let n = n;
     var newlist : [StringReference]
     var i : Double
     newlist = Array(repeating:StringReference(), count: Int(Double(list.count) - 1.0))
@@ -5572,21 +5572,21 @@ func lRemoveString(_ list : inout [StringReference], _ n : Double) -> [StringRef
 
 
 func lGetStringRef(_ list : inout StringArrayReference, _ i : Double) -> StringReferenceReferenceClass{
-    var i = i;
-    var returnReference = StringReferenceReferenceClass()
+    let i = i;
+    let returnReference = StringReferenceReferenceClass()
     returnReference.ref = list.stringArray[Int(i)]
     return returnReference
 }
 
 
 func lRemoveStringRef(_ list : inout StringArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.stringArray = lRemoveString(&list.stringArray, i)
 }
 
 
 func lAddBoolean(_ list : inout [Bool], _ a : Bool) -> [Bool]{
-    var a = a;
+    let a = a;
     var newlist : [Bool]
     var i : Double
     newlist = Array(repeating:Bool(), count: Int(Double(list.count) + 1.0))
@@ -5604,13 +5604,13 @@ func lAddBoolean(_ list : inout [Bool], _ a : Bool) -> [Bool]{
 
 
 func lAddBooleanRef(_ list : inout BooleanArrayReference, _ i : Bool) -> Void{
-    var i = i;
+    let i = i;
     list.booleanArray = lAddBoolean(&list.booleanArray, i)
 }
 
 
 func lRemoveBoolean(_ list : inout [Bool], _ n : Double) -> [Bool]{
-    var n = n;
+    let n = n;
     var newlist : [Bool]
     var i : Double
     newlist = Array(repeating:Bool(), count: Int(Double(list.count) - 1.0))
@@ -5633,19 +5633,19 @@ func lRemoveBoolean(_ list : inout [Bool], _ n : Double) -> [Bool]{
 
 
 func lGetBooleanRef(_ list : inout BooleanArrayReference, _ i : Double) -> Bool{
-    var i = i;
+    let i = i;
     return list.booleanArray[Int(i)]
 }
 
 
 func lRemoveDecimalRef(_ list : inout BooleanArrayReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.booleanArray = lRemoveBoolean(&list.booleanArray, i)
 }
 
 
 func lAddCharacter(_ list : inout [Character], _ a : Character) -> [Character]{
-    var a = a;
+    let a = a;
     var newlist : [Character]
     var i : Double
     newlist = Array(repeating:Character(" "), count: Int(Double(list.count) + 1.0))
@@ -5663,13 +5663,13 @@ func lAddCharacter(_ list : inout [Character], _ a : Character) -> [Character]{
 
 
 func lAddCharacterRef(_ list : inout StringReference, _ i : Character) -> Void{
-    var i = i;
+    let i = i;
     list.stringx = lAddCharacter(&list.stringx, i)
 }
 
 
 func lRemoveCharacter(_ list : inout [Character], _ n : Double) -> [Character]{
-    var n = n;
+    let n = n;
     var newlist : [Character]
     var i : Double
     newlist = Array(repeating:Character(" "), count: Int(Double(list.count) - 1.0))
@@ -5692,13 +5692,13 @@ func lRemoveCharacter(_ list : inout [Character], _ n : Double) -> [Character]{
 
 
 func lGetCharacterRef(_ list : inout StringReference, _ i : Double) -> Character{
-    var i = i;
+    let i = i;
     return list.stringx[Int(i)]
 }
 
 
 func lRemoveCharacterRef(_ list : inout StringReference, _ i : Double) -> Void{
-    var i = i;
+    let i = i;
     list.stringx = lRemoveCharacter(&list.stringx, i)
 }
 
@@ -5792,7 +5792,7 @@ func arraysStringsEqual(_ a : inout [Character], _ b : inout [Character]) -> Boo
 
 
 func arraysFillNumberArray(_ a : inout [Double], _ value : Double) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
     i = 0.0
     while(i < Double(a.count)){
@@ -5803,7 +5803,7 @@ func arraysFillNumberArray(_ a : inout [Double], _ value : Double) -> Void{
 
 
 func arraysFillString(_ a : inout [Character], _ value : Character) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
     i = 0.0
     while(i < Double(a.count)){
@@ -5814,7 +5814,7 @@ func arraysFillString(_ a : inout [Character], _ value : Character) -> Void{
 
 
 func arraysFillBooleanArray(_ a : inout [Bool], _ value : Bool) -> Void{
-    var value = value;
+    let value = value;
     var i : Double
     i = 0.0
     while(i < Double(a.count)){
@@ -5825,9 +5825,9 @@ func arraysFillBooleanArray(_ a : inout [Bool], _ value : Bool) -> Void{
 
 
 func arraysFillNumberArrayInterval(_ a : inout [Double], _ value : Double, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i : Double
     var success : Bool
     if(from >= 0.0 && from < Double(a.count) && to >= 0.0 && to < Double(a.count)){
@@ -5846,9 +5846,9 @@ func arraysFillNumberArrayInterval(_ a : inout [Double], _ value : Double, _ fro
 
 
 func arraysFillBooleanArrayInterval(_ a : inout [Bool], _ value : Bool, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i : Double
     var success : Bool
     if(from >= 0.0 && from < Double(a.count) && to >= 0.0 && to < Double(a.count)){
@@ -5867,9 +5867,9 @@ func arraysFillBooleanArrayInterval(_ a : inout [Bool], _ value : Bool, _ from :
 
 
 func arraysFillStringInterval(_ a : inout [Character], _ value : Character, _ from : Double, _ to : Double) -> Bool{
-    var value = value;
-    var from = from;
-    var to = to;
+    let value = value;
+    let from = from;
+    let to = to;
     var i : Double
     var success : Bool
     if(from >= 0.0 && from < Double(a.count) && to >= 0.0 && to < Double(a.count)){
@@ -5933,8 +5933,8 @@ func arraysCopyString(_ a : inout [Character]) -> [Character]{
 
 
 func arraysCopyNumberArrayRange(_ a : inout [Double], _ from : Double, _ to : Double, _ copyReference : inout NumberArrayReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Double]
     var success : Bool
@@ -5957,8 +5957,8 @@ func arraysCopyNumberArrayRange(_ a : inout [Double], _ from : Double, _ to : Do
 
 
 func arraysCopyBooleanArrayRange(_ a : inout [Bool], _ from : Double, _ to : Double, _ copyReference : inout BooleanArrayReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Bool]
     var success : Bool
@@ -5981,8 +5981,8 @@ func arraysCopyBooleanArrayRange(_ a : inout [Bool], _ from : Double, _ to : Dou
 
 
 func arraysCopyStringRange(_ a : inout [Character], _ from : Double, _ to : Double, _ copyReference : inout StringReference) -> Bool{
-    var from = from;
-    var to = to;
+    let from = from;
+    let to = to;
     var i, length : Double
     var n : [Character]
     var success : Bool
@@ -6005,15 +6005,15 @@ func arraysCopyStringRange(_ a : inout [Character], _ from : Double, _ to : Doub
 
 
 func arraysIsLastElement(_ length : Double, _ index : Double) -> Bool{
-    var length = length;
-    var index = index;
+    let length = length;
+    let index = index;
     return index + 1.0 == length
 }
 
 
 func arraysCreateNumberArray(_ length : Double, _ value : Double) -> [Double]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Double]
     array = Array(repeating:Double(), count: Int(length))
     arraysFillNumberArray(&array, value)
@@ -6023,8 +6023,8 @@ func arraysCreateNumberArray(_ length : Double, _ value : Double) -> [Double]{
 
 
 func arraysCreateBooleanArray(_ length : Double, _ value : Bool) -> [Bool]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Bool]
     array = Array(repeating:Bool(), count: Int(length))
     arraysFillBooleanArray(&array, value)
@@ -6034,8 +6034,8 @@ func arraysCreateBooleanArray(_ length : Double, _ value : Bool) -> [Bool]{
 
 
 func arraysCreateString(_ length : Double, _ value : Character) -> [Character]{
-    var length = length;
-    var value = value;
+    let length = length;
+    let value = value;
     var array : [Character]
     array = Array(repeating:Character(" "), count: Int(length))
     arraysFillString(&array, value)
@@ -6045,7 +6045,7 @@ func arraysCreateString(_ length : Double, _ value : Character) -> [Character]{
 
 
 func cToLowerCase(_ character : Character) -> Character{
-    var character = character;
+    let character = character;
     var toReturn : Character
     toReturn = character
     if(character == "A"){
@@ -6107,7 +6107,7 @@ func cToLowerCase(_ character : Character) -> Character{
 
 
 func cToUpperCase(_ character : Character) -> Character{
-    var character = character;
+    let character = character;
     var toReturn : Character
     toReturn = character
     if(character == "a"){
@@ -6169,7 +6169,7 @@ func cToUpperCase(_ character : Character) -> Character{
 
 
 func cIsUpperCase(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isUpper : Bool
     isUpper = false
     if(character == "A"){
@@ -6231,7 +6231,7 @@ func cIsUpperCase(_ character : Character) -> Bool{
 
 
 func cIsLowerCase(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isLower : Bool
     isLower = false
     if(character == "a"){
@@ -6293,13 +6293,13 @@ func cIsLowerCase(_ character : Character) -> Bool{
 
 
 func cIsLetter(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     return cIsUpperCase(character) || cIsLowerCase(character)
 }
 
 
 func cIsNumber(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isNumber : Bool
     isNumber = false
     if(character == "0"){
@@ -6329,7 +6329,7 @@ func cIsNumber(_ character : Character) -> Bool{
 
 
 func cIsWhiteSpace(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isWhiteSpace : Bool
     isWhiteSpace = false
     if(character == " "){
@@ -6347,7 +6347,7 @@ func cIsWhiteSpace(_ character : Character) -> Bool{
 
 
 func cIsSymbol(_ character : Character) -> Bool{
-    var character = character;
+    let character = character;
     var isSymbol : Bool
     isSymbol = false
     if(character == "!"){
