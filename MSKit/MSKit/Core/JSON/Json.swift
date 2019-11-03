@@ -2667,7 +2667,7 @@ func FreeStringArrayReference(_ stringArrayReference : inout StringArrayReferenc
         delete(stringArrayReference.stringArray[Int(i)])
         i = i + 1.0
     }
-    delete(stringArrayReference.stringArray ?? <#Any#>)
+    delete(stringArrayReference.stringArray )
     delete(stringArrayReference)
 }
 

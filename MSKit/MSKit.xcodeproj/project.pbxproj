@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; };
+		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92A7236557870014785A /* NSString+MSEmoji.m */; };
 		A6AB92AC2365C32C0014785A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AB2365C32C0014785A /* Json.swift */; };
 		A6AB92AE2365C34C0014785A /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AD2365C34C0014785A /* Element.swift */; };
 		A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AF2365C3960014785A /* ElementReferenceType.swift */; };
-		A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */; };
+		A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */; };
-		A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C40236D110700FF1AAB /* NSDictionary+Safe.h */; };
+		A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C40236D110700FF1AAB /* NSDictionary+Safe.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C43236D110700FF1AAB /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C41236D110700FF1AAB /* NSDictionary+Safe.m */; };
-		A6C50C46236D14BB00FF1AAB /* NSArray+Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C44236D14BB00FF1AAB /* NSArray+Exception.h */; };
+		A6C50C46236D14BB00FF1AAB /* NSArray+Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C44236D14BB00FF1AAB /* NSArray+Exception.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C47236D14BB00FF1AAB /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C45236D14BB00FF1AAB /* NSArray+Exception.m */; };
-		A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C48236D16AC00FF1AAB /* NSString+Additions.h */; };
+		A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C48236D16AC00FF1AAB /* NSString+Additions.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C4B236D16AC00FF1AAB /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C49236D16AC00FF1AAB /* NSString+Additions.m */; };
-		A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C4C236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h */; };
+		A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C4C236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C4F236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C4D236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m */; };
-		A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */; };
+		A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C53236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C51236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */; };
+		A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5E9236196FE000DAD2B /* NSString+MSSize.m */; };
-		A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */; };
+		A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5ED2361990B000DAD2B /* UIView+MSSize.m */; };
-		A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */; };
+		A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */; };
-		A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */; };
+		A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F523619EAB000DAD2B /* UIColor+MSHex.m */; };
-		A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */; };
+		A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */; };
-		A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6022361DE4C000DAD2B /* MCTextView.h */; };
+		A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6022361DE4C000DAD2B /* MCTextView.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E6032361DE4C000DAD2B /* MCTextView.m */; };
-		A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */; };
+		A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E6092361E22E000DAD2B /* UITextField+MSLimits.m */; };
 /* End PBXBuildFile section */
 
@@ -239,16 +239,16 @@
 				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
-				A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
 				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
-				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 				A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */,
 				A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */,
 				A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */,
 				A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */,
 				A6C50C46236D14BB00FF1AAB /* NSArray+Exception.h in Headers */,
 				A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */,
+				A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */,
+				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +511,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = NGJVXQWTLX;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -537,7 +537,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = NGJVXQWTLX;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
