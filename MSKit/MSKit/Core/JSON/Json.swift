@@ -2625,7 +2625,7 @@ func CreateStringReferenceLengthValue(_ length : Double, _ value : Character) ->
 
 
 func FreeStringReference(_ stringReference : inout StringReference) -> Void{
-    delete(stringReference.stringx)
+    delete(stringReference.stringx as Any)
     delete(stringReference)
 }
 
@@ -2667,7 +2667,7 @@ func FreeStringArrayReference(_ stringArrayReference : inout StringArrayReferenc
         delete(stringArrayReference.stringArray[Int(i)])
         i = i + 1.0
     }
-    delete(stringArrayReference.stringArray)
+    delete(stringArrayReference.stringArray ?? <#Any#>)
     delete(stringArrayReference)
 }
 

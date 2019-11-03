@@ -20,6 +20,10 @@
 		A6C50C47236D14BB00FF1AAB /* NSArray+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C45236D14BB00FF1AAB /* NSArray+Exception.m */; };
 		A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C48236D16AC00FF1AAB /* NSString+Additions.h */; };
 		A6C50C4B236D16AC00FF1AAB /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C49236D16AC00FF1AAB /* NSString+Additions.m */; };
+		A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C4C236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h */; };
+		A6C50C4F236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C4D236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m */; };
+		A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */; };
+		A6C50C53236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C51236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +67,10 @@
 		A6C50C45236D14BB00FF1AAB /* NSArray+Exception.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Exception.m"; sourceTree = "<group>"; };
 		A6C50C48236D16AC00FF1AAB /* NSString+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		A6C50C49236D16AC00FF1AAB /* NSString+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		A6C50C4C236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+ListConstraint.h"; sourceTree = "<group>"; };
+		A6C50C4D236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+ListConstraint.m"; sourceTree = "<group>"; };
+		A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayoutDebugging.h"; sourceTree = "<group>"; };
+		A6C50C51236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayoutDebugging.m"; sourceTree = "<group>"; };
 		A6F1E5CC236196B0000DAD2B /* MSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1E5CF236196B0000DAD2B /* MSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKit.h; sourceTree = "<group>"; };
 		A6F1E5D0236196B0000DAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +194,10 @@
 			children = (
 				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
 				A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */,
+				A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */,
+				A6C50C51236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m */,
+				A6C50C4C236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h */,
+				A6C50C4D236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m */,
 				A6F1E6092361E22E000DAD2B /* UITextField+MSLimits.m */,
 				A6F1E5ED2361990B000DAD2B /* UIView+MSSize.m */,
 				A6F1E5F423619EAB000DAD2B /* UIColor+MSHex.h */,
@@ -232,9 +244,11 @@
 				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
 				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 				A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */,
+				A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */,
 				A6F1E5EE2361990B000DAD2B /* UIView+MSSize.h in Headers */,
 				A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */,
 				A6C50C46236D14BB00FF1AAB /* NSArray+Exception.h in Headers */,
+				A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +363,9 @@
 				A6F1E5FB2361D842000DAD2B /* NSDate+MSTransform.m in Sources */,
 				A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
+				A6C50C53236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m in Sources */,
 				A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */,
+				A6C50C4F236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

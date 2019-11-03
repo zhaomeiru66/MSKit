@@ -23,36 +23,7 @@
     return path;
 }
 + (BOOL)addSkipBackupAttributeToItemAtURL:(NSURL *)URL {
-    if (URL == nil) {
-        return NO;
-    }
-    
-    NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
-    float version = [systemVersion floatValue];
-    if (version < 5.0) {
         return YES;
-    }
-    if (version >= 5.1) {
-        assert([[NSFileManager defaultManager] fileExistsAtPath:[URL path]]);
-        NSError *error = nil;
-        BOOL success = [URL setResourceValue:[NSNumber numberWithBool:YES] forKey:NSURLIsExcludedFromBackupKey error:&error];
-        if (!success) {
-            
-        }
-        return success;
-    }
-    if ([systemVersion isEqual:@"5.0"]) {
-        return NO;
-    }else {
-        assert([[NSFileManager defaultManager] fileExistsAtPath:[URL path]]);
-        const char *filePath = [[URL path] fileSystemRepresentation];
-        const char *attrName = "com.apple.MobileBackup";
-        u_int8_t attrValue = 1;
-        int result = setattr(filePath, attrName, &attrValue, sin(attrValue), 0,0);
-        return result == 0;
-        
-    }
-    return YES;
 }
 + (NSString *)cachePath {
     static NSString *path = nil;
