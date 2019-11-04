@@ -180,12 +180,12 @@
 			children = (
 				A6AB92AA2365C3000014785A /* JSON */,
 				A6F1E6012361DDE0000DAD2B /* TextView */,
-				A6F1E5E7236196CD000DAD2B /* MSCategories */,
+				A6F1E5E7236196CD000DAD2B /* Categories */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		A6F1E5E7236196CD000DAD2B /* MSCategories */ = {
+		A6F1E5E7236196CD000DAD2B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
 				A6F1E6072361DEB6000DAD2B /* Foundation */,
@@ -193,7 +193,7 @@
 				A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */,
 				A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */,
 			);
-			path = MSCategories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		A6F1E6012361DDE0000DAD2B /* TextView */ = {
