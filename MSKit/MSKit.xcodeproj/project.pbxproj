@@ -28,6 +28,8 @@
 		A6C50C57236E9DB100FF1AAB /* NSUserDefaults+Timing.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C55236E9DB100FF1AAB /* NSUserDefaults+Timing.m */; };
 		A6C50C5A236EA02C00FF1AAB /* UIView+Border.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C58236EA02C00FF1AAB /* UIView+Border.h */; };
 		A6C50C5B236EA02C00FF1AAB /* UIView+Border.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C59236EA02C00FF1AAB /* UIView+Border.m */; };
+		A6C50C5E2370020100FF1AAB /* NSObject+Associate.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C5C2370020000FF1AAB /* NSObject+Associate.h */; };
+		A6C50C5F2370020100FF1AAB /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C5D2370020000FF1AAB /* NSObject+Associate.m */; };
 		A6F1E5D6236196B0000DAD2B /* MSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F1E5CC236196B0000DAD2B /* MSKit.framework */; };
 		A6F1E5DB236196B0000DAD2B /* MSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F1E5DA236196B0000DAD2B /* MSKitTests.m */; };
 		A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F1E5CF236196B0000DAD2B /* MSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +81,8 @@
 		A6C50C55236E9DB100FF1AAB /* NSUserDefaults+Timing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Timing.m"; sourceTree = "<group>"; };
 		A6C50C58236EA02C00FF1AAB /* UIView+Border.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Border.h"; sourceTree = "<group>"; };
 		A6C50C59236EA02C00FF1AAB /* UIView+Border.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Border.m"; sourceTree = "<group>"; };
+		A6C50C5C2370020000FF1AAB /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
+		A6C50C5D2370020000FF1AAB /* NSObject+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associate.m"; sourceTree = "<group>"; };
 		A6F1E5CC236196B0000DAD2B /* MSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F1E5CF236196B0000DAD2B /* MSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSKit.h; sourceTree = "<group>"; };
 		A6F1E5D0236196B0000DAD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				A6C50C40236D110700FF1AAB /* NSDictionary+Safe.h */,
 				A6C50C41236D110700FF1AAB /* NSDictionary+Safe.m */,
 				A6C50C44236D14BB00FF1AAB /* NSArray+Exception.h */,
+				A6C50C5C2370020000FF1AAB /* NSObject+Associate.h */,
+				A6C50C5D2370020000FF1AAB /* NSObject+Associate.m */,
 				A6C50C45236D14BB00FF1AAB /* NSArray+Exception.m */,
 				A6AB92A7236557870014785A /* NSString+MSEmoji.m */,
 				A6F1E5E8236196FE000DAD2B /* NSString+MSSize.h */,
@@ -251,6 +257,7 @@
 				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6C50C5A236EA02C00FF1AAB /* UIView+Border.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
+				A6C50C5E2370020100FF1AAB /* NSObject+Associate.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
 				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
@@ -366,6 +373,7 @@
 			files = (
 				A6AB92AC2365C32C0014785A /* Json.swift in Sources */,
 				A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */,
+				A6C50C5F2370020100FF1AAB /* NSObject+Associate.m in Sources */,
 				A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */,
 				A6C50C43236D110700FF1AAB /* NSDictionary+Safe.m in Sources */,
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
