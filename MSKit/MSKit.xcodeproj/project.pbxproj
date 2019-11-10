@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A608814E2377BD7700728226 /* UIPopoverController+Configure.h in Headers */ = {isa = PBXBuildFile; fileRef = A608814C2377BD7600728226 /* UIPopoverController+Configure.h */; };
+		A608814F2377BD7700728226 /* UIPopoverController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = A608814D2377BD7600728226 /* UIPopoverController+Configure.m */; };
+		A60881522377BE2700728226 /* MSCPopoverBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = A60881502377BE2700728226 /* MSCPopoverBackgroundView.h */; };
+		A60881532377BE2700728226 /* MSCPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A60881512377BE2700728226 /* MSCPopoverBackgroundView.m */; };
+		A60881562377BEB900728226 /* MSCTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = A60881542377BEB900728226 /* MSCTextField.h */; };
+		A60881572377BEB900728226 /* MSCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A60881552377BEB900728226 /* MSCTextField.m */; };
+		A608815A2377BF9800728226 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = A60881582377BF9800728226 /* UIImage+Color.h */; };
+		A608815B2377BF9800728226 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A60881592377BF9800728226 /* UIImage+Color.m */; };
+		A669FF39237146240034DC28 /* UIImage+ResizeCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */; };
+		A669FF3A237146240034DC28 /* UIImage+ResizeCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */; };
 		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92A7236557870014785A /* NSString+MSEmoji.m */; };
 		A6AB92AC2365C32C0014785A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AB2365C32C0014785A /* Json.swift */; };
@@ -62,6 +72,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A608814C2377BD7600728226 /* UIPopoverController+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+Configure.h"; sourceTree = "<group>"; };
+		A608814D2377BD7600728226 /* UIPopoverController+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+Configure.m"; sourceTree = "<group>"; };
+		A60881502377BE2700728226 /* MSCPopoverBackgroundView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCPopoverBackgroundView.h; sourceTree = "<group>"; };
+		A60881512377BE2700728226 /* MSCPopoverBackgroundView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCPopoverBackgroundView.m; sourceTree = "<group>"; };
+		A60881542377BEB900728226 /* MSCTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCTextField.h; sourceTree = "<group>"; };
+		A60881552377BEB900728226 /* MSCTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCTextField.m; sourceTree = "<group>"; };
+		A60881582377BF9800728226 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		A60881592377BF9800728226 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeCrop.h"; sourceTree = "<group>"; };
+		A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeCrop.m"; sourceTree = "<group>"; };
 		A6AB92A6236557870014785A /* NSString+MSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSEmoji.h"; sourceTree = "<group>"; };
 		A6AB92A7236557870014785A /* NSString+MSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MSEmoji.m"; sourceTree = "<group>"; };
 		A6AB92AB2365C32C0014785A /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
@@ -161,6 +181,8 @@
 			children = (
 				A6F1E5E6236196C6000DAD2B /* Core */,
 				A6F1E5CF236196B0000DAD2B /* MSKit.h */,
+				A60881542377BEB900728226 /* MSCTextField.h */,
+				A60881552377BEB900728226 /* MSCTextField.m */,
 				A6F1E5D0236196B0000DAD2B /* Info.plist */,
 			);
 			path = MSKit;
@@ -210,6 +232,14 @@
 			children = (
 				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
 				A6C50C602370041000FF1AAB /* UIViewController+Tracking.h */,
+				A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */,
+				A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */,
+				A608814C2377BD7600728226 /* UIPopoverController+Configure.h */,
+				A608814D2377BD7600728226 /* UIPopoverController+Configure.m */,
+				A60881502377BE2700728226 /* MSCPopoverBackgroundView.h */,
+				A60881582377BF9800728226 /* UIImage+Color.h */,
+				A60881592377BF9800728226 /* UIImage+Color.m */,
+				A60881512377BE2700728226 /* MSCPopoverBackgroundView.m */,
 				A6C50C612370041000FF1AAB /* UIViewController+Tracking.m */,
 				A6F1E6082361E22E000DAD2B /* UITextField+MSLimits.h */,
 				A6C50C50236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h */,
@@ -258,14 +288,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A608815A2377BF9800728226 /* UIImage+Color.h in Headers */,
 				A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */,
 				A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */,
 				A6C50C622370041000FF1AAB /* UIViewController+Tracking.h in Headers */,
 				A6F1E5FA2361D842000DAD2B /* NSDate+MSTransform.h in Headers */,
 				A6C50C5A236EA02C00FF1AAB /* UIView+Border.h in Headers */,
+				A60881522377BE2700728226 /* MSCPopoverBackgroundView.h in Headers */,
 				A6F1E5F223619CCB000DAD2B /* UIButton+MSTouch.h in Headers */,
 				A6C50C5E2370020100FF1AAB /* NSObject+Associate.h in Headers */,
 				A6F1E6042361DE4C000DAD2B /* MCTextView.h in Headers */,
+				A669FF39237146240034DC28 /* UIImage+ResizeCrop.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
 				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
 				A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */,
@@ -275,6 +308,8 @@
 				A6F1E5EA236196FE000DAD2B /* NSString+MSSize.h in Headers */,
 				A6C50C46236D14BB00FF1AAB /* NSArray+Exception.h in Headers */,
 				A6C50C4E236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.h in Headers */,
+				A60881562377BEB900728226 /* MSCTextField.h in Headers */,
+				A608814E2377BD7700728226 /* UIPopoverController+Configure.h in Headers */,
 				A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */,
 				A6F1E5DD236196B0000DAD2B /* MSKit.h in Headers */,
 			);
@@ -378,12 +413,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60881572377BEB900728226 /* MSCTextField.m in Sources */,
 				A6AB92AC2365C32C0014785A /* Json.swift in Sources */,
 				A6F1E5EB236196FE000DAD2B /* NSString+MSSize.m in Sources */,
 				A6C50C5F2370020100FF1AAB /* NSObject+Associate.m in Sources */,
 				A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */,
 				A6C50C43236D110700FF1AAB /* NSDictionary+Safe.m in Sources */,
 				A6C50C632370041000FF1AAB /* UIViewController+Tracking.m in Sources */,
+				A60881532377BE2700728226 /* MSCPopoverBackgroundView.m in Sources */,
 				A6F1E5EF2361990B000DAD2B /* UIView+MSSize.m in Sources */,
 				A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */,
 				A6F1E6052361DE4C000DAD2B /* MCTextView.m in Sources */,
@@ -394,11 +431,14 @@
 				A6C50C5B236EA02C00FF1AAB /* UIView+Border.m in Sources */,
 				A6C50C57236E9DB100FF1AAB /* NSUserDefaults+Timing.m in Sources */,
 				A6AB92A9236557870014785A /* NSString+MSEmoji.m in Sources */,
+				A608814F2377BD7700728226 /* UIPopoverController+Configure.m in Sources */,
 				A6F1E5F323619CCB000DAD2B /* UIButton+MSTouch.m in Sources */,
+				A669FF3A237146240034DC28 /* UIImage+ResizeCrop.m in Sources */,
 				A6C50C53236E95C800FF1AAB /* UIView+AutoLayoutDebugging.m in Sources */,
 				A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */,
 				A6C50C4F236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
+				A608815B2377BF9800728226 /* UIImage+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
