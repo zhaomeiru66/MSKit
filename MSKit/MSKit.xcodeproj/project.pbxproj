@@ -22,6 +22,8 @@
 		A6AB92AC2365C32C0014785A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AB2365C32C0014785A /* Json.swift */; };
 		A6AB92AE2365C34C0014785A /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AD2365C34C0014785A /* Element.swift */; };
 		A6AB92B02365C3960014785A /* ElementReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AB92AF2365C3960014785A /* ElementReferenceType.swift */; };
+		A6B68068237C098800C4B094 /* UIButton+MSRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B68066237C098800C4B094 /* UIButton+MSRuntime.h */; };
+		A6B68069237C098800C4B094 /* UIButton+MSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B68067237C098800C4B094 /* UIButton+MSRuntime.m */; };
 		A6C50C3E236CFE2500FF1AAB /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A6C50C3F236CFE2500FF1AAB /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */; };
 		A6C50C42236D110700FF1AAB /* NSDictionary+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C50C40236D110700FF1AAB /* NSDictionary+Safe.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -87,6 +89,8 @@
 		A6AB92AB2365C32C0014785A /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		A6AB92AD2365C34C0014785A /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		A6AB92AF2365C3960014785A /* ElementReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementReferenceType.swift; sourceTree = "<group>"; };
+		A6B68066237C098800C4B094 /* UIButton+MSRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+MSRuntime.h"; sourceTree = "<group>"; };
+		A6B68067237C098800C4B094 /* UIButton+MSRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+MSRuntime.m"; sourceTree = "<group>"; };
 		A6C50C3C236CFE2500FF1AAB /* NSDictionary+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		A6C50C3D236CFE2500FF1AAB /* NSDictionary+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
 		A6C50C40236D110700FF1AAB /* NSDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 			children = (
 				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
 				A6C50C602370041000FF1AAB /* UIViewController+Tracking.h */,
+				A6B68066237C098800C4B094 /* UIButton+MSRuntime.h */,
+				A6B68067237C098800C4B094 /* UIButton+MSRuntime.m */,
 				A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */,
 				A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */,
 				A608814C2377BD7600728226 /* UIPopoverController+Configure.h */,
@@ -301,6 +307,7 @@
 				A669FF39237146240034DC28 /* UIImage+ResizeCrop.h in Headers */,
 				A6F1E5F623619EAB000DAD2B /* UIColor+MSHex.h in Headers */,
 				A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */,
+				A6B68068237C098800C4B094 /* UIButton+MSRuntime.h in Headers */,
 				A6C50C4A236D16AC00FF1AAB /* NSString+Additions.h in Headers */,
 				A6C50C56236E9DB100FF1AAB /* NSUserDefaults+Timing.h in Headers */,
 				A6C50C52236E95C800FF1AAB /* UIView+AutoLayoutDebugging.h in Headers */,
@@ -438,6 +445,7 @@
 				A6F1E60B2361E22E000DAD2B /* UITextField+MSLimits.m in Sources */,
 				A6C50C4F236E946F00FF1AAB /* NSLayoutConstraint+ListConstraint.m in Sources */,
 				A6F1E5F723619EAB000DAD2B /* UIColor+MSHex.m in Sources */,
+				A6B68069237C098800C4B094 /* UIButton+MSRuntime.m in Sources */,
 				A608815B2377BF9800728226 /* UIImage+Color.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
