@@ -27,15 +27,15 @@
 /**
  return an array of all superviews
  */
-- (NSArray *)superviews {
-    NSMutableArray *array = [NSMutableArray array];
-    UIView *view = self.superview;
-    while (view) {
-        [array addObject:view];
-        view = view.superview;
-    }
-}
-- (BOOL)isAncestorOfView:(UIView *)aView {
-    return [aView superviews] 
-}
+//- (NSArray *)superviews {
+//    NSMutableArray *array = [NSMutableArray array];
+//    //UIView *view = self.superview;
+//    while (view) {
+//        [array addObject:view];
+//        view = view.superview;
+//    }
+//}
+//- (BOOL)isAncestorOfView:(UIView *)aView {
+//    return [aView superviews] 
+//}
 @end
