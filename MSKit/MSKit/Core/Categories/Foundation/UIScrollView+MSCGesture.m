@@ -39,7 +39,7 @@ static char kAssociatedObjectKey_gestrueHandleDisable;
         CGFloat locationDistance = [UIScreen mainScreen].bounds.size.width;
         if (state == UIGestureRecognizerStateBegan || UIGestureRecognizerStatePossible) {
             CGPoint location = [gesture locationInView:self];
-            if (point.x > 0 && location.x < locationDistance && self.contentOffset < 0 ) {
+            if (point.x > 0 && location.x < locationDistance && self.contentOffset.x < 0 ) {
                 return YES;
             }
         }
