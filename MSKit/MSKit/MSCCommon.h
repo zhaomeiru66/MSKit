@@ -310,6 +310,10 @@ static inline void msc_swizzled_method(Class oldclass,
 #define RESIST_V(VIEW, PRIORITY) [VIEW setContentCompressionResistancePriority:(PRIORITY) forAxis:UILayoutConstraintAxisVertical]
 #define RESIST(VIEW, PRIORITY) {RESIST_H(VIEW, PRIORITY); RESIST_V(VIEW, PRIORITY);}
 
+static inline CGFloat DegreesToRadians(CGFloat degrees)
+{
+    return M_PI * (degrees / 180.0);
+}
 
 #define checkNull(__X__)        (__X__) == [NSNull null] || (__X__) == nil ? @"" : [NSString stringWithFormat:@"%@", (__X__)]
 
