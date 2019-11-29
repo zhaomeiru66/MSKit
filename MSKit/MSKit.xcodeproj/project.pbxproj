@@ -295,17 +295,11 @@
 				A6256C2A238F50D300E9853C /* MSCCustomNavigationBar.m */,
 				A6256C2D238F51F600E9853C /* MSCNavigationBarConfiguration.h */,
 				A6256C31238F525E00E9853C /* MSCCommon.h */,
-				A6256C3A238F5B5F00E9853C /* NSObject+MSCNameTag.h */,
-				A6256C3B238F5B5F00E9853C /* NSObject+MSCNameTag.m */,
-				A6256C3E238F5CB400E9853C /* UIView+MSCConstraintMatching.h */,
-				A6256C3F238F5CB400E9853C /* UIView+MSCConstraintMatching.m */,
 				A6256C32238F57E900E9853C /* MSCDurationBlock.h */,
 				A6256C36238F58E000E9853C /* MSCAnimationQueue.h */,
 				A6256C37238F58E000E9853C /* MSCAnimationQueue.m */,
 				A6256C33238F57E900E9853C /* MSCDurationBlock.m */,
 				A6256C2E238F51F600E9853C /* MSCNavigationBarConfiguration.m */,
-				A6256C66238F98EA00E9853C /* UIViewController+MSCHelper.h */,
-				A6256C67238F98EA00E9853C /* UIViewController+MSCHelper.m */,
 				A6256C62238F951B00E9853C /* MSCBaseTransitionAnimation.h */,
 				A6256C63238F951B00E9853C /* MSCBaseTransitionAnimation.m */,
 				A6256C0D238D701400E9853C /* MSCImageView.h */,
@@ -349,8 +343,6 @@
 			children = (
 				A6F1E6072361DEB6000DAD2B /* Foundation */,
 				A6F1E6062361DE96000DAD2B /* UIKit */,
-				A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */,
-				A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -367,6 +359,12 @@
 		A6F1E6062361DE96000DAD2B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				A6256C3E238F5CB400E9853C /* UIView+MSCConstraintMatching.h */,
+				A6256C3F238F5CB400E9853C /* UIView+MSCConstraintMatching.m */,
+				A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */,
+				A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */,
+				A6256C66238F98EA00E9853C /* UIViewController+MSCHelper.h */,
+				A6256C67238F98EA00E9853C /* UIViewController+MSCHelper.m */,
 				A6F1E5EC2361990B000DAD2B /* UIView+MSSize.h */,
 				A6C50C602370041000FF1AAB /* UIViewController+Tracking.h */,
 				A6B68066237C098800C4B094 /* UIButton+MSRuntime.h */,
@@ -412,6 +410,8 @@
 		A6F1E6072361DEB6000DAD2B /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				A6256C3A238F5B5F00E9853C /* NSObject+MSCNameTag.h */,
+				A6256C3B238F5B5F00E9853C /* NSObject+MSCNameTag.m */,
 				A6F1E5F82361D842000DAD2B /* NSDate+MSTransform.h */,
 				A6F1E5F92361D842000DAD2B /* NSDate+MSTransform.m */,
 				A6256C52238F7CD000E9853C /* NSObject+MSCDescription.h */,
