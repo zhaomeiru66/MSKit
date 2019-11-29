@@ -7,7 +7,7 @@
 //
 
 #import "NSDictionary+Safe.h"
-
+#import "MSCCommon.h"
 
 #define isValidKey(key) ((key) != nil && ![key isKindOfClass:[NSNull class]])
 #define isValidValue(value) ((value) !=nil && ![value isKindOfClass:[NSNull class]])
@@ -63,4 +63,12 @@
 - (void)setStringValueForKey:(NSString *)string forKey:(id)aKey {
     [self safeSetObject:string forKey:aKey];
 }
+@end
+
+@implementation NSDictionary (DeleteNullObject)
+
+- (NSString *)deleteNullObject:(NSString *)key {
+    return checkNull([self objectForKey:key]);
+}
+
 @end

@@ -311,6 +311,8 @@ static inline void msc_swizzled_method(Class oldclass,
 #define RESIST(VIEW, PRIORITY) {RESIST_H(VIEW, PRIORITY); RESIST_V(VIEW, PRIORITY);}
 
 
+#define checkNull(__X__)        (__X__) == [NSNull null] || (__X__) == nil ? @"" : [NSString stringWithFormat:@"%@", (__X__)]
+
 #pragma mark OS X
 
 // Content Hugging
