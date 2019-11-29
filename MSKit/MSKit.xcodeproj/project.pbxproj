@@ -73,6 +73,8 @@
 		A6256C65238F951B00E9853C /* MSCBaseTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A6256C63238F951B00E9853C /* MSCBaseTransitionAnimation.m */; };
 		A6256C68238F98EA00E9853C /* UIViewController+MSCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A6256C66238F98EA00E9853C /* UIViewController+MSCHelper.h */; };
 		A6256C69238F98EA00E9853C /* UIViewController+MSCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A6256C67238F98EA00E9853C /* UIViewController+MSCHelper.m */; };
+		A6256C742390DC5D00E9853C /* UIView+MSCAnimationType.h in Headers */ = {isa = PBXBuildFile; fileRef = A6256C722390DC5D00E9853C /* UIView+MSCAnimationType.h */; };
+		A6256C752390DC5D00E9853C /* UIView+MSCAnimationType.m in Sources */ = {isa = PBXBuildFile; fileRef = A6256C732390DC5D00E9853C /* UIView+MSCAnimationType.m */; };
 		A669FF39237146240034DC28 /* UIImage+ResizeCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */; };
 		A669FF3A237146240034DC28 /* UIImage+ResizeCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */; };
 		A6AB92A8236557870014785A /* NSString+MSEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AB92A6236557870014785A /* NSString+MSEmoji.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -196,6 +198,8 @@
 		A6256C63238F951B00E9853C /* MSCBaseTransitionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSCBaseTransitionAnimation.m; sourceTree = "<group>"; };
 		A6256C66238F98EA00E9853C /* UIViewController+MSCHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MSCHelper.h"; sourceTree = "<group>"; };
 		A6256C67238F98EA00E9853C /* UIViewController+MSCHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MSCHelper.m"; sourceTree = "<group>"; };
+		A6256C722390DC5D00E9853C /* UIView+MSCAnimationType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MSCAnimationType.h"; sourceTree = "<group>"; };
+		A6256C732390DC5D00E9853C /* UIView+MSCAnimationType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MSCAnimationType.m"; sourceTree = "<group>"; };
 		A669FF37237146240034DC28 /* UIImage+ResizeCrop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeCrop.h"; sourceTree = "<group>"; };
 		A669FF38237146240034DC28 /* UIImage+ResizeCrop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeCrop.m"; sourceTree = "<group>"; };
 		A6AB92A6236557870014785A /* NSString+MSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MSEmoji.h"; sourceTree = "<group>"; };
@@ -361,6 +365,8 @@
 			children = (
 				A6256C3E238F5CB400E9853C /* UIView+MSCConstraintMatching.h */,
 				A6256C3F238F5CB400E9853C /* UIView+MSCConstraintMatching.m */,
+				A6256C722390DC5D00E9853C /* UIView+MSCAnimationType.h */,
+				A6256C732390DC5D00E9853C /* UIView+MSCAnimationType.m */,
 				A6F1E5F023619CCB000DAD2B /* UIButton+MSTouch.h */,
 				A6F1E5F123619CCB000DAD2B /* UIButton+MSTouch.m */,
 				A6256C66238F98EA00E9853C /* UIViewController+MSCHelper.h */,
@@ -454,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A608815A2377BF9800728226 /* UIImage+Color.h in Headers */,
+				A6256C742390DC5D00E9853C /* UIView+MSCAnimationType.h in Headers */,
 				A6256C23238F48CE00E9853C /* UIViewController+HideNavigationBar.h in Headers */,
 				A6F1E60A2361E22E000DAD2B /* UITextField+MSLimits.h in Headers */,
 				A6256C48238F656400E9853C /* UIView+MSCNamedConstraintSupport.h in Headers */,
@@ -618,6 +625,7 @@
 				A6256C0C238D649D00E9853C /* UIDevice+IOSDevice.m in Sources */,
 				A6256C65238F951B00E9853C /* MSCBaseTransitionAnimation.m in Sources */,
 				A6256BF0238D241100E9853C /* MSCTextFooterButtonView.m in Sources */,
+				A6256C752390DC5D00E9853C /* UIView+MSCAnimationType.m in Sources */,
 				A6256C41238F5CB400E9853C /* UIView+MSCConstraintMatching.m in Sources */,
 				A6256C20238EC03E00E9853C /* UIScrollView+MSCGesture.m in Sources */,
 				A6256C5D238F8B4400E9853C /* UIView+MSCHerarchySupport.m in Sources */,
