@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic,readonly) UIView *firstView;
 @property (nonatomic,readonly) UIView *secondView;
+@property (nonatomic,readonly) BOOL isUnary;
+@property (nonatomic,readonly) UIView *likelyOwner;
 
 @end
 

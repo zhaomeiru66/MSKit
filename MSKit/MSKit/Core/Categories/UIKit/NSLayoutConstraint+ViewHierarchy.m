@@ -24,6 +24,15 @@
     return self.secondItem;
     
 }
+- (BOOL)isUnary {
+    return self.secondItem == nil;
+}
+//- (UIView *)likelyOwner {
+//    if (self.isUnary) {
+//        return self.firstView;
+//    }
+//    return [self.firstView ]
+//}
 /**
  return an array of all superviews
  */
