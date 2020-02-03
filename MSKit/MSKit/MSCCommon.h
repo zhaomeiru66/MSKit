@@ -340,6 +340,8 @@ static inline CGFloat DegreesToRadians(CGFloat degrees)
     _Pragma("clang diagnostic ignored \\"-Wshadow\\"") \\
     metamacro_foreach(rac_strongify_,, __VA_ARGS__) \\
     _Pragma("clang diagnostic pop")
-
+#define MSAAssertTrue(condition, msg) do {\ if (!condition) {\
+NSLog(@"failed: " @ #condition @" " msg);\ }\
+} while(0)
 
 //#endif /* MSCCommon_h */
