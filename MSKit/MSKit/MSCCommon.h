@@ -344,4 +344,83 @@ static inline CGFloat DegreesToRadians(CGFloat degrees)
 NSLog(@"failed: " @ #condition @" " msg);\ }\
 } while(0)
 
+
+#pragma mark Collections
+
+#define IDARRAY(...) (id []){ __VA_ARGS__ }
+#define IDCOUNT(...) (sizeof(IDARRAY(__VA_ARGS__)) / sizeof(id))
+
+#define ARRAY(...) [NSArray arrayWithObjects: IDARRAY(__VA_ARGS__) count: IDCOUNT(__VA_ARGS__)]
+
+#define DICT(...) DictionaryWithIDArray(IDARRAY(__VA_ARGS__), IDCOUNT(__VA_ARGS__) / 2)
+
+//The helper function unpacks the object array and then calls through to NSDictionary to create the dictionary:
+static inline NSDictionary *DictionaryWithIDArray(id *array, NSUInteger count) {
+    id keys[count];
+    id objs[count];
+    
+    for(NSUInteger i = 0; i < count; i++) {
+        keys[i] = array[i * 2];
+        objs[i] = array[i * 2 + 1];
+    }
+    
+    return [NSDictionary dictionaryWithObjects: objs forKeys: keys count: count];
+}
+#define POINTERIZE(x) ((__typeof__(x) []){ x })
+#define NSVALUE(x) [NSValue valueWithBytes: POINTERIZE(x) objCType: @encode(__typeof__(x))]
+
+#pragma mark -
+#pragma mark Blocks
+
+#define BLOCK_SAFE_RUN(block, ...) block ? block(__VA_ARGS__) : nil
+
+#pragma mark -
+#pragma mark Logging
+
+#define LOG(fmt, ...) NSLog(@"%s: " fmt, __PRETTY_FUNCTION__, ## __VA_ARGS__)
+
+#ifdef DEBUG
+    #define INFO(fmt, ...) LOG(fmt, ## __VA_ARGS__)
+#else
+    // do nothing
+    #define INFO(fmt, ...) 
+#endif
+
+#define ERROR(fmt, ...) LOG(fmt, ## __VA_ARGS__)
+#define TRACE(fmt, ...) LOG(fmt, ## __VA_ARGS__)
+
+#define METHOD_NOT_IMPLEMENTED() NSAssert(NO, @"You must override %@ in a subclass", NSStringFromSelector(_cmd))
+
+#pragma mark NSNumber
+
+#define NUM_INT(int) [NSNumber numberWithInt:int]
+#define NUM_FLOAT(float) [NSNumber numberWithFloat:float]
+#define NUM_BOOL(bool) [NSNumber numberWithBool:bool]
+
+#pragma mark -
+#pragma mark Frame Geometry
+
+#define CENTER_VERTICALLY(parent,child) floor((parent.frame.size.height - child.frame.size.height) / 2)
+#define CENTER_HORIZONTALLY(parent,child) floor((parent.frame.size.width - child.frame.size.width) / 2)
+
+// example: [[UIView alloc] initWithFrame:(CGRect){CENTER_IN_PARENT(parentView,500,500),CGSizeMake(500,500)}];
+#define CENTER_IN_PARENT(parent,childWidth,childHeight) CGPointMake(floor((parent.frame.size.width - childWidth) / 2),floor((parent.frame.size.height - childHeight) / 2))
+#define CENTER_IN_PARENT_X(parent,childWidth) floor((parent.frame.size.width - childWidth) / 2)
+#define CENTER_IN_PARENT_Y(parent,childHeight) floor((parent.frame.size.height - childHeight) / 2)
+
+#define WIDTH(view) view.frame.size.width
+#define HEIGHT(view) view.frame.size.height
+#define X(view) view.frame.origin.x
+#define Y(view) view.frame.origin.y
+#define LEFT(view) view.frame.origin.x
+#define TOP(view) view.frame.origin.y
+#define BOTTOM(view) (view.frame.origin.y + view.frame.size.height) 
+#define RIGHT(view) (view.frame.origin.x + view.frame.size.width) 
+
+#pragma mark Screen size
+
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+
 //#endif /* MSCCommon_h */
